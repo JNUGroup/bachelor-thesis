@@ -1,0 +1,521 @@
+\begin{table}
+        \centering
+        \begin{tabular}{cccp{38mm}}
+            \toprule
+            \textbf{文档域类型} & \textbf{Java类型} & \textbf{宽度(字节)} & \textbf{说明} \\
+            \midrule
+            BOOLEAN  & boolean &  1  & \\
+            CHAR     & char    &  2  & UTF-16字符 \\
+            BYTE     & byte    &  1  & 有符号8位整数 \\
+            SHORT    & short   &  2  & 有符号16位整数 \\
+            INT      & int     &  4  & 有符号32位整数 \\
+            LONG     & long    &  8  & 有符号64位整数 \\
+            STRING   & String  &  字符串长度  & 以UTF-8编码存储 \\
+            DATE     & java.util.Date & 8 & 距离GMT时间1970年1月1日0点0分0秒的毫秒数 \\
+            BYTE\_ARRAY & byte$[]$ & 数组长度 & 用于存储二进制值 \\
+            BIG\_INTEGER & java.math.BigInteger & 和具体值有关 & 任意精度的长整数 \\
+            BIG\_DECIMAL & java.math.BigDecimal & 和具体值有关 & 任意精度的十进制实数 \\
+            \bottomrule
+        \end{tabular}
+        \caption{测试表格}\label{table:test1}
+    \end{table}
+
+
+
+测试一下脚注\footnote{测试脚注}，测试一下脚注\footnote{测试脚注}，测试一下脚
+注\footnote{测试脚注}，测试一下脚注\footnote{测试脚注}，测试一下脚注\footnote{测
+    试脚注}，测试一下脚注\footnote{测试脚注}，测试一下脚注\footnote{测试脚注}，测
+试一下脚注\footnote{测试脚注}，测试一下脚注\footnote{测试脚注}，测试一下脚
+注\footnote{测试脚注}。
+
+测试一下引用\cite{newman2006structure}，连续引用
+\cite{newman2001random,aiello2000random,bollobas2001random}，另一个连续引用
+\cite{newman2001random,bollobas2001random,barabasi1999emergence}。测试一下带页码
+的引用\cite[124--128]{erdHos1961strength}。
+
+下面是一个项目列表：
+
+\begin{itemize}
+    \item 这是第一项。这是第一项。
+    \item 这是第二项。这是第二项。这是第二项。这是第二项。这是第二项。这是第二项。这
+    是第二项。这是第二项。这是第二项。这是第二项。这是第二项。
+    \item 这是第三项。这是第三项。这是第三项。
+    \begin{itemize}
+        \item 测试第二层列表。测试第二层列表。
+        \item 测试第二层列表。测试第二层列表。
+        \begin{itemize}
+            \item 测试第三层列表。测试第三层列表。
+            \item 测试第三层列表。测试第三层列表。
+        \end{itemize}
+        \item 测试第二层列表。测试第二层列表。测试第二层列表。测试第二层列表。测试第二
+        层列表。
+    \end{itemize}
+    \item 这是第四项。这是第四项。这是第四项。
+    \begin{enumerate}
+        \item 测试第二层列表。测试第二层列表。测试第二层列表。测试第二层列表。测试第二
+        层列表。测试第二层列表。测试第二层列表。测试第二层列表。
+        \item 测试第二层列表。测试第二层列表。
+        \item 测试第二层列表。测试第二层列表。测试第二层列表。测试第二层列表。测试第二
+        层列表。
+    \end{enumerate}
+\end{itemize}
+
+下面是一个编号列表：
+
+\begin{enumerate}
+    \item 这是第一项。这是第一项。这是第一项。这是第一项。这是第一项。这是第一项。这
+    是第一项。这是第一项。这是第一项。这是第一项。这是第一项。
+    \item 这是第二项。这是第二项。
+    \item 这是第三项。这是第三项。这是第三项。
+    \begin{itemize}
+        \item 测试第二层列表。测试第二层列表。
+        \item 测试第二层列表。测试第二层列表。
+        \item 测试第二层列表。测试第二层列表。测试第二层列表。测试第二层列表。测试第二
+        层列表。
+    \end{itemize}
+    \item 这是第四项。这是第四项。这是第四项。
+    \begin{enumerate}
+        \item 测试第二层列表。测试第二层列表。
+        \begin{enumerate}
+            \item 测试第三层列表。测试第三层列表。测试第三层列表。测试第三层列表。测试第三
+            层列表。测试第三层列表。
+            \item 测试第三层列表。测试第三层列表。
+            \item 测试第三层列表。测试第三层列表。测试第三层列表。
+        \end{enumerate}
+        \item 测试第二层列表。测试第二层列表。测试第二层列表。
+    \end{enumerate}
+\end{enumerate}
+
+下面是最多三层的阿拉伯数字列表:
+\begin{arabicenum}
+    \item 第1项
+    \item 第2项
+    \begin{arabicenum}
+        \item 第2.1项
+        \item 第2.2项
+        \begin{arabicenum}
+            \item 第2.2.1项
+            \item 第2.2.2项
+            \item 第2.2.3项
+        \end{arabicenum}
+        \item 第2.3项
+    \end{arabicenum}
+    \item 第3项
+\end{arabicenum}
+
+下面是最多两层的罗马数字列表:
+\begin{romanenum}
+    \item 第1项
+    \item 第2项
+    \begin{romanenum}
+        \item 第2.1项
+        \item 第2.2项
+        \item 第2.3项
+    \end{romanenum}
+    \item 第3项
+\end{romanenum}
+
+下面是最多两层的小写字母列表:
+\begin{alphaenum}
+    \item 第1项
+    \item 第2项
+    \begin{alphaenum}
+        \item 第2.1项
+        \item 第2.2项
+        \item 第2.3项
+    \end{alphaenum}
+    \item 第3项
+\end{alphaenum}
+
+下面是最多两层的情况列表:
+\begin{caseenum}
+    \item 第1项
+    \item 第2项
+    \begin{caseenum}
+        \item 第2.1项
+        \item 第2.2项
+        \item 第2.3项
+    \end{caseenum}
+    \item 第3项
+\end{caseenum}
+
+下面是最多两层的步骤列表:
+\begin{stepenum}
+    \item 第1项
+    \item 第2项
+    \begin{stepenum}
+        \item 第2.1项
+        \item 第2.2项
+        \item 第2.3项
+    \end{stepenum}
+    \item 第3项
+\end{stepenum}
+
+下面测试一下引用环境|quote|。下面测试一下引用环境|quote|。下面测试一下引用环境|quote|。
+下面测试一下引用环境|quote|。下面测试一下引用环境|quote|。下面测试一下引用环境|quote|。
+下面测试一下引用环境|quote|。下面测试一下引用环境|quote|。下面测试一下引用环境|quote|。
+
+\begin{quote}
+    这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。
+    这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。
+    这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。
+    
+    这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。
+    这是一段引用。这是一段引用。这是一段引用。
+    
+    这是一段引用。这是一段引用。
+\end{quote}
+
+下面测试一下引用环境|quotation|。下面测试一下引用环境|quotation|。
+下面测试一下引用环境|quotation|。下面测试一下引用环境|quotation|。
+下面测试一下引用环境|quotation|。下面测试一下引用环境|quotation|。
+下面测试一下引用环境|quotation|。下面测试一下引用环境|quotation|。
+下面测试一下引用环境|quotation|。
+
+\begin{quotation}
+    这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。
+    这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。
+    这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。
+    
+    这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。这是一段引用。
+    这是一段引用。这是一段引用。这是一段引用。
+    
+    这是一段引用。这是一段引用。
+\end{quotation}
+
+引用结束。引用结束。引用结束。引用结束。引用结束。引用结束。引用结束。引用结束。引用结束。
+引用结束。引用结束。引用结束。
+
+测试一下定理环境。
+
+\begin{theorem}[测试定理]
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{theorem}
+\begin{proof}
+    \blindtext
+\end{proof}
+
+\blindtext
+
+\begin{theorem}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{theorem}
+\begin{proof}
+    \blindtext
+\end{proof}
+
+\blindtext
+
+\begin{lemma}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{lemma}
+\begin{proof}
+    \blindtext
+\end{proof}
+
+\blindtext
+
+\begin{definition}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{definition}
+
+\blindtext
+
+\begin{corollary}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{corollary}
+
+\blindtext
+
+\begin{proposition}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{proposition}
+
+\blindtext
+
+\begin{fact}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{fact}
+
+\blindtext
+
+\begin{assumption}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{assumption}
+
+\blindtext
+
+\begin{conjecture}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{conjecture}
+
+\blindtext
+
+\begin{hypothesis}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{hypothesis}
+
+\blindtext
+
+\begin{axiom}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{axiom}
+
+\blindtext
+
+\begin{postulate}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{postulate}
+
+\blindtext
+
+\begin{principle}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{principle}
+
+\blindtext
+
+\begin{problem}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{problem}
+\begin{solution}
+    \blindtext
+\end{solution}
+
+\blindtext
+
+\begin{problem}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{problem}
+\begin{solution}
+    \blindtext
+\end{solution}
+
+\blindtext
+
+\begin{exercise}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{exercise}
+
+\blindtext
+
+\begin{exercise}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{exercise}
+
+\begin{algorithm}
+    测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下定理环境。测试一下
+    定理环境。测试一下定理环境。测试一下定理环境。
+\end{algorithm}
+
+\subsection{中心观点与思想}
+
+云计算在概念上通常被分为IaaS、PaaS、SaaS几个层面。但透过分类去理解其本
+质，可认为是上世纪70年代基于大型计算机的中心控制型瘦客户端终端模式，在
+如今技术水平上的一种新的表达，是在技术发展道路中，螺旋上升的结果。
+
+与瘦客户端相比，云计算在设计结构上存在一定的相似性。
+
+\begin{enumerate}
+    \item 中心控制的模式：通过中心的大规模硬件提供统一的计算，可大大降低管理成本，提
+    高硬件资源利用率，同时降低客户端的硬件成本需求。例如Nvidia推出Georce GRID平台
+    \cite{NVIDIAGRID}，推出了GaaS\footnote{Gaming as a Service}概念。将
+    GPU放置在云端，使得用户不需要再不断购买升级显卡，并可在更为广泛的终端（包括手机、
+    平板、智能电视）和地点体验最新的游戏。
+    \item 数据集中：由于瘦客户端的关系，数据都集中存储在中心，可对数据提供
+    可靠的保护，并且通过按需调用的实现方式，降低对网络带宽的需求。
+\end{enumerate}
+
+
+
+
+测试一下中文字体：
+
+{\songti\zihao{0} 宋体，初号}
+
+{\songti\zihao{-0} 宋体，小初}
+
+{\songti\zihao{1} 宋体，一号}
+
+{\songti\zihao{-1} 宋体，小一}
+
+{\songti\zihao{2} 宋体，二号}
+
+{\songti\zihao{-2} 宋体，小二}
+
+{\songti\zihao{3} 宋体，三号}
+
+{\songti\zihao{-3} 宋体，小三}
+
+{\songti\zihao{4} 宋体，四号}
+
+{\songti\zihao{-4} 宋体，小四}
+
+{\songti\zihao{5} 宋体，五号}
+
+{\songti\zihao{-5} 宋体，小五}
+
+{\songti\zihao{6} 宋体，六号}
+
+{\songti\zihao{-6} 宋体，小六}
+
+{\songti\zihao{7} 宋体，七号}
+
+{\songti\zihao{8} 宋体，八号}
+
+{\heiti\zihao{0} 黑体，初号}
+
+{\heiti\zihao{-0} 黑体，小初}
+
+{\heiti\zihao{1} 黑体，一号}
+
+{\heiti\zihao{-1} 黑体，小一}
+
+{\heiti\zihao{2} 黑体，二号}
+
+{\heiti\zihao{-2} 黑体，小二}
+
+{\heiti\zihao{3} 黑体，三号}
+
+{\heiti\zihao{-3} 黑体，小三}
+
+{\heiti\zihao{4} 黑体，四号}
+
+{\heiti\zihao{-4} 黑体，小四}
+
+{\heiti\zihao{5} 黑体，五号}
+
+{\heiti\zihao{-5} 黑体，小五}
+
+{\heiti\zihao{6} 黑体，六号}
+
+{\heiti\zihao{-6} 黑体，小六}
+
+{\heiti\zihao{7} 黑体，七号}
+
+{\heiti\zihao{8} 黑体，八号}
+
+{\kaishu\zihao{0} 楷书，初号}
+
+{\kaishu\zihao{-0} 楷书，小初}
+
+{\kaishu\zihao{1} 楷书，一号}
+
+{\kaishu\zihao{-1} 楷书，小一}
+
+{\kaishu\zihao{2} 楷书，二号}
+
+{\kaishu\zihao{-2} 楷书，小二}
+
+{\kaishu\zihao{3} 楷书，三号}
+
+{\kaishu\zihao{-3} 楷书，小三}
+
+{\kaishu\zihao{4} 楷书，四号}
+
+{\kaishu\zihao{-4} 楷书，小四}
+
+{\kaishu\zihao{5} 楷书，五号}
+
+{\kaishu\zihao{-5} 楷书，小五}
+
+{\kaishu\zihao{6} 楷书，六号}
+
+{\kaishu\zihao{-6} 楷书，小六}
+
+{\kaishu\zihao{7} 楷书，七号}
+
+{\kaishu\zihao{8} 楷书，八号}
+
+{\fangsong\zihao{0} 仿宋，初号}
+
+{\fangsong\zihao{-0} 仿宋，小初}
+
+{\fangsong\zihao{1} 仿宋，一号}
+
+{\fangsong\zihao{-1} 仿宋，小一}
+
+{\fangsong\zihao{2} 仿宋，二号}
+
+{\fangsong\zihao{-2} 仿宋，小二}
+
+{\fangsong\zihao{3} 仿宋，三号}
+
+{\fangsong\zihao{-3} 仿宋，小三}
+
+{\fangsong\zihao{4} 仿宋，四号}
+
+{\fangsong\zihao{-4} 仿宋，小四}
+
+{\fangsong\zihao{5} 仿宋，五号}
+
+{\fangsong\zihao{-5} 仿宋，小五}
+
+{\fangsong\zihao{6} 仿宋，六号}
+
+{\fangsong\zihao{-6} 仿宋，小六}
+
+{\fangsong\zihao{7} 仿宋，七号}
+
+{\fangsong\zihao{8} 仿宋，八号}
+
+测试一下标准字号：
+
+{\Huge 汉字，Huge}
+
+{\huge 汉字，huge}
+
+{\LARGE 汉字，LARGE}
+
+{\Large 汉字，Large}
+
+{\large 汉字，large}
+
+{\normalsize 汉字，normalsize}
+
+{\small 汉字，small}
+
+{\footnotesize 汉字，footnotesize}
+
+{\scriptsize 汉字，scriptsize}
+
+{\tiny 汉字，tiny}
+
+测试一下标准字体的变形：
+
+{\songti 宋体} {\heiti 黑体} {\kaishu 楷书} {\fangsong 仿宋}
+
+{\textsl{textsl字体}}
+
+{\bfseries bfseries字体}
+
+{\textbf{textbf字体}}
+
+{\textit{textit字体}}
+
+测试一下数学公式中的字体大小。
+
+\newcommand{\set}[1]{\left\{\,#1\,\right\}}
+\newcommand{\card}[1]{\left|\,#1\,\right|}
+
+Fall-Out指标计算公式如下：
+\begin{equation*}
+\mbox{fallout} = \frac{\card{\set{\text{不相关文档}}\cap\set{\text{获取的文档}}}}{\card{\set{\text{不相关文档}}}}
+\end{equation*}
