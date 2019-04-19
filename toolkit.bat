@@ -13,7 +13,7 @@ echo.            1 - compile
 echo.            2 - wordcount
 echo.            3 - pandoc
 echo.            4 - clean
-echo.            0 - 退出
+echo.            5 - pdftk
 echo.-----------------------------------------------------------
 set input=
 set /p input=请选择【输入序号,然后回车】：
@@ -69,5 +69,10 @@ del *.synctex(busy) /s
 del *.idx /s
 del *.ilg /s
 del *.ind /s
+pause
+goto main
+
+:main4
+pdftk.exe A=cover.pdf B=bachelor.pdf cat A1 B2-end output bachelor-v2.pdf
 pause
 goto main
