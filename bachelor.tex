@@ -3,6 +3,7 @@
 %\input{bachelor-common}
 \usepackage[math]{blindtext}
 \usepackage[version=4]{mhchem}
+%\usepackage{subfigure}
 %\graphicspath{{Figure/}}
 \titlea{含硒表面活性剂囊泡的构筑}
 \titleb{与性质研究}
@@ -61,7 +62,7 @@
     有点\cite{jessop2012}。同时，开关表面活性剂这种“关闭”是可以通过另一种手段进行恢复的。
     本文将简述可分解表面活性剂及其应用的概况，并就刺激手段为分类方式概述开关表面活性剂的发展状况。
     
-    \subsection{可分解表面活性剂}
+    \section{可分解表面活性剂}
     可分解表面活性剂最初主要是为了解决环境问题而发展起来的，理论设想通过在分子中嵌入
     易断裂化学键提高生物降解速率，尽管研究中所发现的高效酶催化或化学催化分解未必
     总能够反映到实际中微生物的高效降解\cite{tehrani2007}。传统表面活性剂一般相对稳定，
@@ -72,11 +73,70 @@
     臭氧以及加热等手段进行分解，可分解表面活性剂主要包含对酸不稳定（缩醛类、缩酮类、
     原酸酯类及硅氧烷基表面活性剂）、对碱不稳定（季铵酯、甜菜碱酯、单烷基（醚）碳酸酯）以及
     对UV-光照、热及臭氧不稳定的各类表面活性剂，相关文献\cite{hellberg2000,tehrani2007,shukla2010,narayanan2008}对此
-    进行了综述，各类型代表可分解表面活性剂见图 1。
+    进行了综述，各类型代表可分解表面活性剂见图\ref{fig:cleavable-saa} or 图\ref{fig:cleavable-a}。
     
-   
+%    \begin{figure}
+%        \centering
+%        \subfloat[][]{%
+%        \label{fig:cleavable-a}%
+%        \includegraphics[width=.9\textwidth]{Figure/cleavable-a.png}}%
+%        %\hspace{8pt}%
+%        \subfloat[][]{%
+%        \label{fig:ex3-b}%
+%        \includegraphics[width=.9\textwidth]{example-image}}\\
+%        \subfloat[][]{%
+%        \label{fig:ex3-c}%
+%        \includegraphics[width=.9\textwidth]{example-image}}%
+%       % \hspace{8pt}%
+%        \subfloat[][]{%
+%        \label{fig:ex3-d}%
+%        \includegraphics[width=.9\textwidth]{example-image}}%
+%        \caption[A set of four sub-floats.]{A set of four sub-floats:
+%        \subref{fig:cleavable-a} 对酸性不稳定的可分解表面活性剂;
+%        \subref{fig:ex3-b} describes the second sub-float;
+%        \subref{fig:ex3-c} describes the third sub-float; and,
+%        \subref{fig:ex3-d} describes the last sub-float.}%
+%        \label{fig:ex3}%
+%    \end{figure}
     
-    图 1 已发展的可分解表面活性剂类型
+    \begin{figure}
+        \centering
+        \begin{subfigure}[b]{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/cleavable-a.pdf}
+            \caption{对酸性不稳定的可分解表面活性剂}\label{fig:cleavable-a}
+        \end{subfigure}%
+    
+        \begin{subfigure}[b]{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/cleavable-b.pdf}
+            \caption{对碱性不稳定的可分解表面活性剂}\label{fig:cleavable-b}
+        \end{subfigure}
+    
+        \begin{subfigure}[b]{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/cleavable-c.pdf}
+            \caption{光照分解表面活性剂}\label{fig:cleavable-c}
+        \end{subfigure}%
+
+        \begin{subfigure}[b]{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/cleavable-d.pdf}
+            \caption{臭氧分解表面活性剂}\label{fig:cleavable-d}
+        \end{subfigure}
+    \end{figure}
+\addtocounter{figure}{-1} % 将图的编号减1
+\begin{figure}[t]
+\addtocounter{subfigure}{1} % 子图编号加2
+        \begin{subfigure}[b]{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figure/cleavable-e.pdf}
+            \caption{臭氧分解表面活性剂}\label{fig:cleavable-e}
+        \end{subfigure}
+        \caption{已发展的可分解表面活性剂类型}\label{fig:cleavable-saa}
+    \end{figure}
+    e. 通过Diels-Alder反应合成的热不稳定可分解表面活性剂
+    
     可分解表面活性剂发展的最初目的是为了解决传统表面活性剂难生物降解的环境问题，同时
     可分解表面活性剂也可在乳化阶段之后通过刺激手段使乳液破乳，也可用于纳米粒子及聚合物制备中
     易脱除的模板剂\cite{liu2007}。此外，一些研究将分解表面活性剂用于膜蛋白的质谱分析\cite{norris2003}
@@ -95,11 +155,18 @@
         \caption{肉豆蔻酰胆碱在SC4A空白及存在下的两亲自组装示意图}\label{fig:Ch1-SC4A}
     \end{figure}
         
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.7\linewidth]{../test.pdf}
+            \caption{}
+            \label{fig:plot01}
+        \end{figure}
+        
     \section{开关表面活性剂}
     相比可分解表面活性剂分解不可恢复，开关表面活性剂的性质转变是可逆的，是可以调控的，
     例如，非离子表面活性剂就是一类传统的温度开关表面活性剂，当温度上升，其亲水性降低、
     表面活性降低，当温度恢复时其性质亦恢复。根据这些刺激响应的方式，可将开关表面活性剂分为：
-    光开关、磁开关、温度开关、酸碱开关、CO2开关及包含电化学方法和化学方法的氧化-还原开关表面活性剂\cite{秦勇2009}。
+    光开关、磁开关、温度开关、酸碱开关、\ce{CO2}开关及包含电化学方法和化学方法的氧化-还原开关表面活性剂\cite{秦勇2009}。
     
     \subsection{光开关表面活性剂}
     光开关表面活性剂在非极性疏水尾链或极性亲水头基中具有适当的显色基团\cite{张冤帝2017}。
@@ -126,7 +193,7 @@
     
     \subsection{磁开关表面活性剂}
     磁开关表面活性剂含有磁响应结构，有离子液体、螯合型以及多金属氧酸盐表面活性剂，此外，
-    磁性有机分子表面活性剂是有待发展的新一类磁表面活性剂[19]，Brown\cite{brown2015}对此类
+    磁性有机分子表面活性剂是有待发展的新一类磁表面活性剂\cite{brown2015}，Brown\cite{brown2015}对此类
     磁表面活性剂进行了综述，磁响应表面活性剂可用于蛋白质分离、水处理以及环境修复\cite{brown2015}。
     几类磁相应表面活性剂见图 6。
     
@@ -151,19 +218,19 @@
     
     图 9 pH调节构象作为开关
     \subsection{\ce{CO2}/\ce{N2}开关表面活性剂}
-    CO2型开关表面活性剂其作用原理本质上和酸碱开关表面活性剂类似，利用CO2气体的弱酸性，
-    随着CO2的通入和排出，体系的pH发生变化，从而引起体系内可离子化基团质子化或去质子化，
-    导致亲疏水性发生变化，进而影响体系的表面活性。迄今为止，CO2开关型表面活性剂主要包括
-    脒/CO2体系、胍/CO2体系以及胺/CO2体系\cite{梅平2016}。
-    CO2型开关表面活性剂采用CO2作为调控手段，相比其他调控手段，价格便宜、无毒害且易除去等
+    \ce{CO2}型开关表面活性剂其作用原理本质上和酸碱开关表面活性剂类似，利用\ce{CO2}气体的弱酸性，
+    随着\ce{CO2}的通入和排出，体系的pH发生变化，从而引起体系内可离子化基团质子化或去质子化，
+    导致亲疏水性发生变化，进而影响体系的表面活性。迄今为止，\ce{CO2}开关型表面活性剂主要包括
+    脒/\ce{CO2}体系、胍/\ce{CO2}体系以及胺/\ce{CO2}体系\cite{梅平2016}。
+    \ce{CO2}型开关表面活性剂采用\ce{CO2}作为调控手段，相比其他调控手段，价格便宜、无毒害且易除去等
     优点\cite{jessop2012}，可应用于重油输送、土壤清洗、油砂分离及乳化聚合\cite{jessop2012}。
-    早在开关表面活性剂概念提出之前，CO2型开关表面活性剂已投入使用，Moore和Lefevre采用CO2作为
+    早在开关表面活性剂概念提出之前，\ce{CO2}型开关表面活性剂已投入使用，Moore和Lefevre采用\ce{CO2}作为
     丁二烯/苯乙烯乳液聚合的开关表面能活性剂（见图 10.a），其中左式具有乳化作用而右式不具有乳化作用。
     
-    图 10 较早应用及研究的CO2型开关表面活性剂
+    图 10 较早应用及研究的\ce{CO2}型开关表面活性剂
     
-    2006年，Jessop课题组\cite{liu2006science}提出一类脒类化合物可用于CO2开关表面活性剂，
-    此外，三级胺也可用于CO2开关表面活性剂，但一级、二级胺则因为形成氨基甲酸酯在开关
+    2006年，Jessop课题组\cite{liu2006science}提出一类脒类化合物可用于\ce{CO2}开关表面活性剂，
+    此外，三级胺也可用于\ce{CO2}开关表面活性剂，但一级、二级胺则因为形成氨基甲酸酯在开关
     表面活性剂应用中有所难度\cite{jessop2012}。
     \subsection{氧化-还原开关表面活性剂}
     氧化还原型开关表面活性剂采用电化学方法或化学手段改变表面活性剂分子内部分结构，
@@ -182,7 +249,7 @@
     
     图 12 二硫键型氧化-还原开关表面活性剂
     最后，含硒表面活性剂作为一种新型的氧化-还原开关表面活性剂，Kong等\cite{kong2016redox}利用
-    H2O2将硒醚氧化为硒亚砜，使尾链亲水性增加，且在Na2SO3等还原条件下又可恢复原结构。
+    \ce{H2O2}将硒醚氧化为硒亚砜，使尾链亲水性增加，且在\ce{Na2SO3}等还原条件下又可恢复原结构。
     
     图 13 含硒氧化-还原表面活性剂的可逆转化\cite{kong2016redox}
     除以上类型的开关表面活性剂之外，还有酶催化\cite{ku2011}的开关表面活性剂有待讨论。
@@ -199,7 +266,7 @@
     有较大应用价值。
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \chapter{实验部分}\label{chapter_experiment}
+    \chapter{实验部分}\label{chapter:experiment}
     \section{实验仪器与试剂}
         \begin{table}[htp]
         \centering
@@ -238,13 +305,6 @@ s            LONG     & lon8  & 国药集团化学试剂有限公司 \\
     
     \section{囊泡的性质研究}
     
-    \begin{definition}[直径]
-        网络中任意两个节点之间的距离的最大值称为该网络的直径，记为$D$，即
-        \begin{equation}\label{eq:dimension}
-        D = \max_{i,j} d_{ij}
-        \end{equation}
-    \end{definition}
-       
     \begin{definition}[平均路径长度]
         网络的平均路径长度$L$定义为任意两个节点之间的距离的平均值，即
         \begin{equation}\label{eq:avarage_path_lentgh}
@@ -270,37 +330,7 @@ s            LONG     & lon8  & 国药集团化学试剂有限公司 \\
         点组的个数，$G_{\wedge}$表示该网络中开三点组的个数\cite{luce1949method}。
     \end{definition}
     
-    \begin{table}
-        \centering
-        \begin{tabular}{cccp{38mm}}
-            \toprule
-            \textbf{文档域类型} & \textbf{Java类型} & \textbf{宽度(字节)} & \textbf{说明} \\
-            \midrule
-            BOOLEAN  & boolean &  1  & \\
-            CHAR     & char    &  2  & UTF-16字符 \\
-            BYTE     & byte    &  1  & 有符号8位整数 \\
-            SHORT    & short   &  2  & 有符号16位整数 \\
-            INT      & int     &  4  & 有符号32位整数 \\
-            LONG     & long    &  8  & 有符号64位整数 \\
-            STRING   & String  &  字符串长度  & 以UTF-8编码存储 \\
-            DATE     & java.util.Date & 8 & 距离GMT时间1970年1月1日0点0分0秒的毫秒数 \\
-            BYTE\_ARRAY & byte$[]$ & 数组长度 & 用于存储二进制值 \\
-            BIG\_INTEGER & java.math.BigInteger & 和具体值有关 & 任意精度的长整数 \\
-            BIG\_DECIMAL & java.math.BigDecimal & 和具体值有关 & 任意精度的十进制实数 \\
-            \bottomrule
-        \end{tabular}
-        \caption{测试表格}\label{table:test4}
-    \end{table}
-    
     \begin{definition}[局部聚类系数]
-        
-        假设网络中的一个节点$i$有$k_i$条边与其他节点相连，这$k_i$个节点称为节点
-        $i$的邻居。显然，在这$k_i$个节点之间最多可能有$k_i(k_i-1)/2$条边。而这
-        $k_i$个节点之间实际存在的边数$E_i$和总的可能的边数$k_i(k_i-1)/2$之比就
-        定义为节点$i$的聚类系数(clustering coefficient)$C_i$，即
-        \begin{equation}\label{eq:clustering_coefficient}
-        C_i = \frac{2E_i}{k_i(k_i-1)}
-        \end{equation}
         从几何特性上看，上式的一个等价定义为：
         \begin{equation}\label{eq:clustering_coefficient_triangle}
         C_i = \frac{\text{与节点$i$相连的三角形的数量}}{\text{与节点$i$相连
@@ -309,31 +339,14 @@ s            LONG     & lon8  & 国药集团化学试剂有限公司 \\
         其中，与节点$i$相连的三元组是指由节点$i$和其两个邻居节点构成的组合。
     \end{definition}
     
-  
-    
-    \begin{definition}[平均聚类系数]
-        平均聚类系数定义为所有顶点的局部集聚系数的算术平均数，即
-        \begin{equation}
-        \bar{C} = \frac{1}{n}\sum_{i=1}^{n} C_i.
-        \end{equation}
-    \end{definition}
-    
-    \begin{definition}[度分布]
-        网络中节点的度的分布状况可用分布函数$P(k)$来描述：
-        \begin{equation}\label{eq:degree_distribution}
-        P(k) = \text{一个随机选定的节点的度恰好是$k$的概率}
-        \end{equation}
-        $P(k)$称为该网络的度分布。
-    \end{definition}
-    
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \chapter{实验结果与讨论}\label{chapter_results}
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \chapter{实验结果与讨论}\label{chapter:results}
     \section{表面活性剂的结构表征}
     the fox jumps over the lazy dog.
         
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % 学位论文的正文应以《结论》作为最后一章
-    \chapter{结论与展望}\label{chapter_concludes}
+    \chapter{结论与展望}\label{chapter:concludes}
     
     本文在第\ref{chapter_smallworld}章中，通过\cite{newman2001structure}考虑数据中心网络布局构建中的最大度限制
     问题，提出了符合数据中心网络基本要求的DS小世界模型，并分析了它的性质。随后提出
