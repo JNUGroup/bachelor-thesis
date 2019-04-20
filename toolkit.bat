@@ -21,6 +21,7 @@ if /i '%input%'=='1' goto main1
 if /i '%input%'=='2' goto main2
 if /i '%input%'=='3' goto main3
 if /i '%input%'=='4' goto main4
+if /i '%input%'=='5' goto main5
 cls
 echo.
 pause
@@ -72,7 +73,7 @@ del *.ind /s
 pause
 goto main
 
-:main4
+:main5
 pdftk.exe A=cover.pdf B=bachelor.pdf cat A1 B2-end output bachelor-v2.pdf
 pause
 goto main
