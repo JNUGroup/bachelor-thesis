@@ -1,5 +1,5 @@
 % 本科毕业论文选项
-\documentclass[bachelor,winfonts]{jnuthesis} %Font: winfonts, sourcefonts, adobefonts.
+\documentclass[bachelor,adobefonts]{jnuthesis} %Font: winfonts, sourcefonts, adobefonts.% now I replace adobefonts with fandolfonts
 %\input{bachelor-common}
 \usepackage[math]{blindtext}
 \usepackage[version=4]{mhchem}
@@ -31,14 +31,14 @@
         的发展，以及对人类社会、通信网络、生物网络、社交网络等各领域研究的深入，
         发现了小世界网络和无尺度现象等普适现象与方法。对复杂网络的定性定量的科
         学理解和分析，已成为如今网络时代科学研究的一个重点课题。
-        \keywords{小世界理论；网络模型；数据中心}
+        \keywords{开关表面活性剂；硒；囊泡；氧化还原}
     \end{abstract}
     
     % 论文的英文摘要
     \begin{englishabstract}
         \blindtext
         % 英文关键词。关键词之间用英文半角逗号隔开，末尾无符号。
-        \englishkeywords{Small World, Network Model, Data Center}
+        \englishkeywords{Switchable Surfactant, Selenium, Vesicle, Redox}
     \end{englishabstract}
     
     % 生成论文目次
@@ -125,17 +125,17 @@
             \caption{臭氧分解表面活性剂}\label{fig:cleavable-d}
         \end{subfigure}
     \end{figure}
-\addtocounter{figure}{-1} % 将图的编号减1
-\begin{figure}[t]
-\addtocounter{subfigure}{1} % 子图编号加2
-        \begin{subfigure}[b]{\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{Figure/cleavable-e.pdf}
-            \caption{臭氧分解表面活性剂}\label{fig:cleavable-e}
-        \end{subfigure}
-        \caption{已发展的可分解表面活性剂类型}\label{fig:cleavable-saa}
-    \end{figure}
-    e. 通过Diels-Alder反应合成的热不稳定可分解表面活性剂
+%%\addtocounter{figure}{-1} % 将图的编号减1
+%\begin{figure}[t]
+%%\addtocounter{subfigure}{1} % 子图编号加2
+%        \begin{subfigure}[b]{\textwidth}
+%            \centering
+%            \includegraphics[width=\textwidth]{Figure/cleavable-e.pdf}
+%            \caption{臭氧分解表面活性剂}\label{fig:cleavable-e}
+%        \end{subfigure}
+%        \caption{已发展的可分解表面活性剂类型}\label{fig:cleavable-saa}
+%    \end{figure}
+%    e. 通过Diels-Alder反应合成的热不稳定可分解表面活性剂
     
     可分解表面活性剂发展的最初目的是为了解决传统表面活性剂难生物降解的环境问题，同时
     可分解表面活性剂也可在乳化阶段之后通过刺激手段使乳液破乳，也可用于纳米粒子及聚合物制备中
@@ -439,11 +439,13 @@ s          硼氢化钠  & AR  & 上海化学试剂有限公司 \\
     % 推荐使用BibTeX，若不使用BibTeX时注释掉下面一句。
     %\nocite{*}
     \bibliography{bachelor}
+    %\fancyhead[C]{\songti\zihao{5}参考文献}
     % 不使用 BibTeX
     %\begin{thebibliography}{2}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % 致谢，应放在《结论》之后
+   % \fancyhead[C]{\songti\zihao{5}致谢}
     \begin{acknowledgement}
         首先感谢我的母亲韦春花对我的支持。其次感谢我的导师陈近南对我的精心指导和热心帮助。接下来，
         感谢我的师兄茅十八和风际中，他们阅读了我的论文草稿并提出了很有价值的修改建议。
@@ -451,14 +453,14 @@ s          硼氢化钠  & AR  & 上海化学试剂有限公司 \\
         最后，感谢我亲爱的老婆们：双儿、苏荃、阿珂、沐剑屏、曾柔、建宁公主、方怡，感谢
         你们在生活上对我无微不至的关怀和照顾。我爱你们！
     \end{acknowledgement}
-    s
-    \begin{appendix}
-    \chapter{彩色插图}
+    %\fancyhead[C]{\songti\zihao{5}附录}
+    \begin{backmatter}
+    \chapter{附录 A：彩色插图}
     \begin{figure}[htbp]
         \centering
         \includegraphics[width= 0.55\textwidth]{Figure/Ch1-SC4A}\\
         \caption{肉豆蔻酰胆碱在SC4A空白及存在下的两亲自组装示意图}
     \end{figure}
-    \end{appendix}
+    \end{backmatter}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
