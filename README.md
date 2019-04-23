@@ -4,8 +4,10 @@
 >
 > 此仓库毕业后转为私有仓库
 
-1. [毕业论文](https://raw.githubusercontent.com/mchen19/bachelor-thesis/master/bachelor.pdf)
-2. [答辩演示文稿](https://raw.githubusercontent.com/mchen19/bachelor-thesis/master/beamer.pdf)
+**PDF 下载：**
+
+1. [毕业论文.pdf](https://raw.githubusercontent.com/mchen19/bachelor-thesis/master/bachelor.pdf)
+2. [答辩用演示文稿.pdf](https://raw.githubusercontent.com/mchen19/bachelor-thesis/master/beamer.pdf)
 
 ## 含硒表面活性剂囊泡的构筑与性质研究
 
