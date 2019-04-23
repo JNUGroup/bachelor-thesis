@@ -70,10 +70,14 @@ del *.synctex(busy) /s
 del *.idx /s
 del *.ilg /s
 del *.ind /s
+del *.nav /s
+del *.snm /s
 pause
 goto main
 
 :main5
-pdftk.exe A=cover.pdf B=bachelor.pdf cat A1 B2-end output bachelor-v2.pdf
+pdftk.exe A=archive/cover.pdf B=bachelor.pdf cat A1 B2-end output bachelor-v2.pdf
+DEL bachelor.pdf
+RENAME bachelor-v2.pdf bachelor.pdf
 pause
 goto main

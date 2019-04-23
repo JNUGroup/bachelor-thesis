@@ -1,8 +1,10 @@
 % 本科毕业论文选项
-\documentclass[bachelor,adobefonts]{jnuthesis} %Font: winfonts, sourcefonts, adobefonts.% now I replace adobefonts with fandolfonts
+\documentclass[bachelor,fandolfonts,replaceperiod]{jnuthesis} %Font: winfonts, sourcefonts, adobefonts.% now I replace adobefonts with fandolfonts
 %\input{bachelor-common}
-\usepackage[math]{blindtext}
+%\usepackage[math]{blindtext}
 \usepackage[version=4]{mhchem}
+\usepackage{zhlipsum}
+\usepackage{lipsum}
 %\usepackage{subfigure}
 %\graphicspath{{Figure/}}
 \titlea{含硒表面活性剂囊泡的构筑}
@@ -31,14 +33,14 @@
         的发展，以及对人类社会、通信网络、生物网络、社交网络等各领域研究的深入，
         发现了小世界网络和无尺度现象等普适现象与方法。对复杂网络的定性定量的科
         学理解和分析，已成为如今网络时代科学研究的一个重点课题。
-        \keywords{开关表面活性剂；硒；囊泡；氧化还原}
+        \keywords{开关表面活性剂；硒；氧化还原；囊泡}
     \end{abstract}
     
     % 论文的英文摘要
     \begin{englishabstract}
-        \blindtext
+        \lipsum[1-2]
         % 英文关键词。关键词之间用英文半角逗号隔开，末尾无符号。
-        \englishkeywords{Switchable Surfactant, Selenium, Vesicle, Redox}
+        \englishkeywords{Switchable Surfactant, Selenium, Redox, Vesicle}
     \end{englishabstract}
     
     % 生成论文目次
@@ -47,97 +49,99 @@
     % 开始正文部分
     \mainmatter
     
-    \chapter{绪论}\label{chapter_introduction}
+    \chapter{绪论}\label{chapter:introduction}
     \section{引言}
-    表面活性剂因其乳化、润湿、增溶等优良作用而广泛应用于诸如原油回收、土壤修复、乳液聚合、
-    药物制备等领域\cite{秦勇2009}。一般情况下，表面活性剂大多具有性能稳定的特点，但在
-    大多数情况下，它只在某一阶段起作用，过程结束后，往往分离困难，另一方面，表面活性剂
-    一般不参与化学反应，直接排放既是一种浪费，同时给环境带来压力\cite{秦勇2009}。
     
-    为应对传统表面活性剂生物降解速率慢，人们发展出可分解表面活性剂（Cleavable Surfactants）
-    ，此类表面活性剂在酶、酸碱、光照、加热等条件下可促发分解\cite{hellberg2000}。20世纪80年代
-    以来，各种触发机制的开关表面活性剂（Switchable Surfactants）被发展出来，用于调控
-    表面活性剂性质，例如，聚合物的乳胶悬浮液在储存运输中需要是稳定的，担当其被施工涂到
-    表面之后并不需要稳定的悬浮液，那么能够对这一性质进行“关闭”显然是此类表面活性剂的
-    有点\cite{jessop2012}。同时，开关表面活性剂这种“关闭”是可以通过另一种手段进行恢复的。
-    本文将简述可分解表面活性剂及其应用的概况，并就刺激手段为分类方式概述开关表面活性剂的发展状况。
+    【表面活性剂简述】表面活性剂因其乳化、润湿、增溶等优良作用而广泛应用于诸如原油回收、
+    土壤修复、乳液聚合、药物制备等领域\cite{秦勇2009}。
     
-    \section{可分解表面活性剂}
-    可分解表面活性剂最初主要是为了解决环境问题而发展起来的，理论设想通过在分子中嵌入
+    一般情况下，表面活性剂大多具有性能稳定的特点，但在    大多数情况下，它只在某一阶段起作用，
+    过程结束后，往往分离困难，另一方面，表面活性剂一般不参与化学反应，直接排放既是一种浪费，
+    同时给环境带来压力\cite{秦勇2009}。因此，人们先后发展了多样触发机制的的可分解表面活性剂 (Cleavable Surfactants)
+    和开关型表面活性剂 (Switchable Surfactants)。
+    
+    \section{开关型表面活性剂}
+    为应对传统表面活性剂生物降解速率慢、引起的环境问题，人们开始关注于可分解表面活性剂，设想通过
+    分子内嵌入易断裂化学键以提供生物降解速率（尽管化学研究中的高效催化分解未必能够体现完全在实际中的微生物高效降解），此类表面活性剂在酸、碱、光照、加热、酶催化等
+    条件下能够促发分解\cite{hellberg2000}。
+    
+ 可分解表面活性剂最初主要是为了
+    解决环境问题而发展起来的，理论设想通过在分子中嵌入
     易断裂化学键提高生物降解速率，尽管研究中所发现的高效酶催化或化学催化分解未必
     总能够反映到实际中微生物的高效降解\cite{tehrani2007}。传统表面活性剂一般相对稳定，
     早在可分解表面活性剂概念发展之前，季铵酯类表面活性剂已用作纺织品柔软剂，其便是典型的
     可分解表面活性剂。此外，十二烷基硫酸钠的自催化降解、脂肪酸聚氧乙烯酯应当在中性或
     弱碱性使用、羰基表面活性剂酸性条件可分解均被人们注意并用以实际\cite{tehrani2007}。
+    
     而对于可分解表面活性剂，其可采用酶催化分解，也可采用酸催化、碱催化水解或是UV光照、
     臭氧以及加热等手段进行分解，可分解表面活性剂主要包含对酸不稳定（缩醛类、缩酮类、
     原酸酯类及硅氧烷基表面活性剂）、对碱不稳定（季铵酯、甜菜碱酯、单烷基（醚）碳酸酯）以及
-    对UV-光照、热及臭氧不稳定的各类表面活性剂，相关文献\cite{hellberg2000,tehrani2007,shukla2010,narayanan2008}对此
-    进行了综述，各类型代表可分解表面活性剂见图\ref{fig:cleavable-saa} or 图\ref{fig:cleavable-a}。
+    对UV-光照、热及臭氧不稳定的各类表面活性剂\cite{hellberg2000,tehrani2007,shukla2010,narayanan2008}。%，相关文献\cite{hellberg2000,tehrani2007,shukla2010,narayanan2008}对此
+    %进行了综述，各类型代表可分解表面活性剂见图\ref{fig:cleavable-saa} or 图\ref{fig:cleavable-a}。
     
-%    \begin{figure}
-%        \centering
-%        \subfloat[][]{%
-%        \label{fig:cleavable-a}%
-%        \includegraphics[width=.9\textwidth]{Figure/cleavable-a.png}}%
-%        %\hspace{8pt}%
-%        \subfloat[][]{%
-%        \label{fig:ex3-b}%
-%        \includegraphics[width=.9\textwidth]{example-image}}\\
-%        \subfloat[][]{%
-%        \label{fig:ex3-c}%
-%        \includegraphics[width=.9\textwidth]{example-image}}%
-%       % \hspace{8pt}%
-%        \subfloat[][]{%
-%        \label{fig:ex3-d}%
-%        \includegraphics[width=.9\textwidth]{example-image}}%
-%        \caption[A set of four sub-floats.]{A set of four sub-floats:
-%        \subref{fig:cleavable-a} 对酸性不稳定的可分解表面活性剂;
-%        \subref{fig:ex3-b} describes the second sub-float;
-%        \subref{fig:ex3-c} describes the third sub-float; and,
-%        \subref{fig:ex3-d} describes the last sub-float.}%
-%        \label{fig:ex3}%
-%    \end{figure}
+    %    \begin{figure}
+    %        \centering
+    %        \subfloat[][]{%
+    %        \label{fig:cleavable-a}%
+    %        \includegraphics[width=.9\textwidth]{Figure/cleavable-a.png}}%
+    %        %\hspace{8pt}%
+    %        \subfloat[][]{%
+    %        \label{fig:ex3-b}%
+    %        \includegraphics[width=.9\textwidth]{example-image}}\\
+    %        \subfloat[][]{%
+    %        \label{fig:ex3-c}%
+    %        \includegraphics[width=.9\textwidth]{example-image}}%
+    %       % \hspace{8pt}%
+    %        \subfloat[][]{%
+    %        \label{fig:ex3-d}%
+    %        \includegraphics[width=.9\textwidth]{example-image}}%
+    %        \caption[A set of four sub-floats.]{A set of four sub-floats:
+    %        \subref{fig:cleavable-a} 对酸性不稳定的可分解表面活性剂;
+    %        \subref{fig:ex3-b} describes the second sub-float;
+    %        \subref{fig:ex3-c} describes the third sub-float; and,
+    %        \subref{fig:ex3-d} describes the last sub-float.}%
+    %        \label{fig:ex3}%
+    %    \end{figure}
     
-    \begin{figure}
-        \centering
-        \begin{subfigure}[b]{\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{Figure/cleavable-a.pdf}
-            \caption{对酸性不稳定的可分解表面活性剂}\label{fig:cleavable-a}
-        \end{subfigure}%
+    %    \begin{figure}
+    %        \centering
+    %        \begin{subfigure}[b]{\textwidth}
+    %            \centering
+    %            \includegraphics[width=\textwidth]{Figure/cleavable-a.pdf}
+    %            \caption{对酸性不稳定的可分解表面活性剂}\label{fig:cleavable-a}
+    %        \end{subfigure}%
+    %    
+    %        \begin{subfigure}[b]{\textwidth}
+    %            \centering
+    %            \includegraphics[width=\textwidth]{Figure/cleavable-b.pdf}
+    %            \caption{对碱性不稳定的可分解表面活性剂}\label{fig:cleavable-b}
+    %        \end{subfigure}
+    %    
+    %        \begin{subfigure}[b]{\textwidth}
+    %            \centering
+    %            \includegraphics[width=\textwidth]{Figure/cleavable-c.pdf}
+    %            \caption{光照分解表面活性剂}\label{fig:cleavable-c}
+    %        \end{subfigure}%
+    %
+    %        \begin{subfigure}[b]{\textwidth}
+    %            \centering
+    %            \includegraphics[width=\textwidth]{Figure/cleavable-d.pdf}
+    %            \caption{臭氧分解表面活性剂}\label{fig:cleavable-d}
+    %        \end{subfigure}
+    %    \end{figure}
+    %%\addtocounter{figure}{-1} % 将图的编号减1
+    %\begin{figure}[t]
+    %%\addtocounter{subfigure}{1} % 子图编号加2
+    %        \begin{subfigure}[b]{\textwidth}
+    %            \centering
+    %            \includegraphics[width=\textwidth]{Figure/cleavable-e.pdf}
+    %            \caption{臭氧分解表面活性剂}\label{fig:cleavable-e}
+    %        \end{subfigure}
+    %        \caption{已发展的可分解表面活性剂类型}\label{fig:cleavable-saa}
+    %    \end{figure}
+    %    e. 通过Diels-Alder反应合成的热不稳定可分解表面活性剂
     
-        \begin{subfigure}[b]{\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{Figure/cleavable-b.pdf}
-            \caption{对碱性不稳定的可分解表面活性剂}\label{fig:cleavable-b}
-        \end{subfigure}
-    
-        \begin{subfigure}[b]{\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{Figure/cleavable-c.pdf}
-            \caption{光照分解表面活性剂}\label{fig:cleavable-c}
-        \end{subfigure}%
-
-        \begin{subfigure}[b]{\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{Figure/cleavable-d.pdf}
-            \caption{臭氧分解表面活性剂}\label{fig:cleavable-d}
-        \end{subfigure}
-    \end{figure}
-%%\addtocounter{figure}{-1} % 将图的编号减1
-%\begin{figure}[t]
-%%\addtocounter{subfigure}{1} % 子图编号加2
-%        \begin{subfigure}[b]{\textwidth}
-%            \centering
-%            \includegraphics[width=\textwidth]{Figure/cleavable-e.pdf}
-%            \caption{臭氧分解表面活性剂}\label{fig:cleavable-e}
-%        \end{subfigure}
-%        \caption{已发展的可分解表面活性剂类型}\label{fig:cleavable-saa}
-%    \end{figure}
-%    e. 通过Diels-Alder反应合成的热不稳定可分解表面活性剂
-    
-    可分解表面活性剂发展的最初目的是为了解决传统表面活性剂难生物降解的环境问题，同时
+        可分解表面活性剂发展的最初目的是为了解决传统表面活性剂难生物降解的环境问题，同时
     可分解表面活性剂也可在乳化阶段之后通过刺激手段使乳液破乳，也可用于纳米粒子及聚合物制备中
     易脱除的模板剂\cite{liu2007}。此外，一些研究将分解表面活性剂用于膜蛋白的质谱分析\cite{norris2003}
     及胶束电动色谱\cite{stanley2012}。但与此同时，化学或酶催化降解有时不能完全适合于微生物的
@@ -154,15 +158,16 @@
         \includegraphics[width= 0.55\textwidth]{Figure/Ch1-SC4A}\\
         \caption{肉豆蔻酰胆碱在SC4A空白及存在下的两亲自组装示意图}\label{fig:cleavale-SC4A}
     \end{figure}
-        
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.7\linewidth]{Figure/test.pdf}
-            \caption{}
-            \label{fig:plot01}
-        \end{figure}
-        
-    \section{开关表面活性剂}
+    
+   【转向开关表活】
+    
+    20世纪80年代
+    以来，各种触发机制的开关表面活性剂（Switchable Surfactants）被发展出来，用于调控
+    表面活性剂性质，例如，聚合物的乳胶悬浮液在储存运输中需要是稳定的，担当其被施工涂到
+    表面之后并不需要稳定的悬浮液，那么能够对这一性质进行“关闭”显然是此类表面活性剂的
+    有点\cite{jessop2012}。同时，开关表面活性剂这种“关闭”是可以通过另一种手段进行恢复的。
+    本文将简述可分解表面活性剂及其应用的概况，并就刺激手段为分类方式概述开关表面活性剂的发展状况。
+    
     相比可分解表面活性剂分解不可恢复，开关表面活性剂的性质转变是可逆的，是可以调控的，
     例如，非离子表面活性剂就是一类传统的温度开关表面活性剂，当温度上升，其亲水性降低、
     表面活性降低，当温度恢复时其性质亦恢复。根据这些刺激响应的方式，可将开关表面活性剂分为：
@@ -183,7 +188,7 @@
         \includegraphics[width= \textwidth]{Figure/switchable-light.pdf}\\
         \caption{电化学方法实现氧化-还原开关表面活性剂：二茂铁基和联吡啶类开关表面活性剂}\label{fig:switchable-light}
     \end{figure}
-
+    
     图\ref{fig:switchable-light} 几类异构型光开关表面活性剂\cite{张冤帝2017,karthaus1996,shang2003,吕湘亮2018}
     其中，偶氮型光开关表面活性剂研究较早，应用较广，一些光敏表面活性剂如偶氮类分解型及
     光照不可逆型不当归入光开关表面活性剂，刘清斌在其硕士论文中对光敏型表面活性剂做了总结\cite{刘清斌2018}。
@@ -250,7 +255,7 @@
         \includegraphics[width= \textwidth]{Figure/switchable-cp2fe.pdf}\\
         \caption{电化学方法实现氧化-还原开关表面活性剂：二茂铁基和联吡啶类开关表面活性剂}\label{fig:switchable-redox-cp2fe}
     \end{figure}
-   
+    
     此外，甲基紫类结构，即联吡啶类结构的表面活性剂也是一类良好的氧化-还原表面活性剂，
     但此类表面活性剂具有高毒性，如氯化二甲基联吡啶（即百草枯主要成分，一种高度植物农药）。
     
@@ -262,18 +267,24 @@
     \ce{H2O2}将硒醚氧化为硒亚砜，使尾链亲水性增加，且在\ce{Na2SO3}等还原条件下又可恢复原结构。
     
     图 13 含硒氧化-还原表面活性剂的可逆转化\cite{kong2016redox}
-    除以上类型的开关表面活性剂之外，还有酶催化\cite{ku2011}的开关表面活性剂有待讨论。
     
-
+    \subsection{酶开关表面活性剂}
+    除以上类型的开关表面活性剂之外，还有酶催化\cite{ku2011}【Enzyme-triggered model self-assembly in surfactant–cyclodextrin systems】的开关表面活性剂有待讨论。
+    
+    
+    \section{含硒表面活性剂}
+    \zhlipsum[1]
+    
+    \section{囊泡}
+    \zhlipsum[1]
+    
     \section{论文的目的与创新}
-    云计算作为分布式技术的当前表现形式，通过将众多节点资源整合，以冗余、去
-    中心化的分布式模式，实现传统技术中需要大型机才能解决的海量信息问题。一
-    言而概之，“人多力量大”。在上述传统网络中，当节点总数达到数千乃至万数量级时，上层链路的聚合带宽
-    将不断提高，从而对核心交换机、接入路由器、边界路由器的指标提出了极高的
-    要求。以至于少数核心网络设备，成为整个网络中的高价格、高性能单点。一方
-    面与原本追求低成本、分布化、去中心化的云技术设计理念背道而驰，另一方面
-    也降低了网络的健壮性。因而本文所做工作对数据中心的网络基础设施而言，具
-    有较大应用价值。
+    \subsection{研究目的}
+    \zhlipsum[1]
+    \subsection{创新之处}
+    \zhlipsum[1]
+    \subsection{研究内容}
+    \zhlipsum[1]
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \chapter{实验部分}\label{chapter:experiment}
@@ -302,16 +313,10 @@ s          硼氢化钠  & AR  & 上海化学试剂有限公司 \\
         \end{tabular}
         \caption{实验仪器与试剂}\label{table:实验仪器与试剂}
     \end{table}
-    生活中，常出现初次见面的陌生人却拥有双方都认识的共同熟人，于是大家时常
-    会感叹：“这世界真小！”。这种现象被称为``小世界现象''，后又称为``六度
-    分割理论''。
+
+    \zhlipsum[1]
     
-    1909年，现代无线电之父Guglielmo Marconi在其诺贝尔奖致辞中讨论了覆盖整个地球所需
-    的无线电中继站数目，并根据他的实验结果计算出平均需要$5.83$（近似为$6$）个中继站
-    \cite{marconi1909nobel}。这个结论，被认为是``六度分割理论''中的常数$6$的最早出处
-    \cite{barabasi2003linked}。
-    
-    \section{含硒表面活性剂的合成}
+    \section{含硒表面活性剂的制备}
     \subsection{含硒表面活性剂的合成路线}
     \begin{figure}[htbp]
         \centering
@@ -319,14 +324,10 @@ s          硼氢化钠  & AR  & 上海化学试剂有限公司 \\
         \caption{含硒表面活性剂的合成路线}\label{fig:synthesis}
     \end{figure}
     
-    在刻画复杂网络结构的统计特性上有三个重要的指标：平均路径长度（average
-    path length）、聚类系数（clustering coefficient）和度分布（degree
-    distribution）。事实上，Watts和Strogatz提出小世界网络模型的初衷，就是
+    \zhlipsum[1]
     
     \section{囊泡的构筑}
-    
-    想建立一个既具有类似随机图的较小的平均路径长度，又具有类似规则网络的较
-    大的聚类系数的网络模型。
+    \zhlipsum[1]
     
     \section{囊泡的性质研究}
     
@@ -338,129 +339,77 @@ s          硼氢化钠  & AR  & 上海化学试剂有限公司 \\
         其中$N$为网络节点数。网络的平均路径长度也称为网络的特征路径长度。
     \end{definition}
     
-    注意，为了便于数学处理，在公式\eqref{eq:avarage_path_lentgh}中包含了节
-    点到其自身的距离（该距离为零）。如果不考虑节点到其自身的距离，那么公式
-    \eqref{eq:avarage_path_lentgh}的右端需要乘以因子$(N+1)/(N-1)$。在实际应
-    用中，该差别可以忽略不计。
-    
-    \begin{definition}[整体聚类系数]
-        整体集聚系数的定义建立在闭三点组（邻近三点组）之上。假设网络中有一部分
-        节点是两所有的连通三点组。整体集聚系数定义为
-        一个网络中所有闭三点组的数量与所有连通三点组（无论开还是闭）的总量之比，
-        即
-        \[
-        C_{total}=\frac{3\times G_{\triangle}}{3 \times G_{\triangle} + G_{\wedge}}
-        \]
-        其中$C_{total}$表示网络的整体聚类系数，$G_{\triangle}$表示该网络中闭三
-        点组的个数，$G_{\wedge}$表示该网络中开三点组的个数\cite{luce1949method}。
-    \end{definition}
-    
-    \begin{definition}[局部聚类系数]
-        从几何特性上看，上式的一个等价定义为：
-        \begin{equation}\label{eq:clustering_coefficient_triangle}
-        C_i = \frac{\text{与节点$i$相连的三角形的数量}}{\text{与节点$i$相连
-                的三元组的数量}}
-        \end{equation}
-        其中，与节点$i$相连的三元组是指由节点$i$和其两个邻居节点构成的组合。
-    \end{definition}
-    
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \chapter{实验结果与讨论}\label{chapter:results}
     \section{表面活性剂的结构表征}
-    the fox jumps over the lazy dog.
+    the quick brown fox jumps over the lazy dog.
         
+        
+        
+    \section{不同浓度构筑含硒SAA囊泡}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[height=6cm]{Figure/123concentration.png}\\
+        \caption{不同浓度复配囊泡}\label{fig:vesicle-concentration}
+    \end{figure}
+
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figure/test.pdf}\\
+        \caption{不同浓度复配囊泡}\label{fig:vesicle-concentration-line}
+    \end{figure}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[]{Figure/redox.pdf}\\
+        \caption{不同浓度复配囊泡}\label{fig:vesicle-concentration}
+    \end{figure}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % 学位论文的正文应以《结论》作为最后一章
     \chapter{结论与展望}\label{chapter:concludes}
     
-    本文在第\ref{chapter_smallworld}章中，通过\cite{newman2001structure}考虑数据中心网络布局构建中的最大度限制
+    本文在第\ref{chapter:experiment}章中，通过考虑数据中心网络布局构建中的最大度限制
     问题，提出了符合数据中心网络基本要求的DS小世界模型，并分析了它的性质。随后提出
     SIDN，将DS模型映射到具体的网络结构中，并分析了所构成网络的平均直径、网络总带宽、
     对故障的容错能力等各项网络性能。
     
-    分析与仿真实验证明，SIDN网络具有很好的扩展能力，网络总带宽与网络规模成
-    近似线性增长的关系；具有很强的容错能力，链路损坏与节点损坏几乎无法破坏
-    网络的联通性，故障率对网络性能的影响与破坏节点/链路占总资源比率线性相关。
-    
-    随后在第\ref{chapter_scalefree}章中，分析了无尺度网络在数据中心网络构建应用中的
-    理论方面问题。对Scafida \cite{gyarmati2010scafida}文中所述在最大度限制的情况下运
-    用BA算法构造的网络并不会损失无尺度性质的观点，进行了深入的分析，并指出了该论点的
-    局限性。
-    
-    在给出了在引入节点最大度限制之后，利用分治和递归的思想，对无尺度网络
-    进行多层构建，对所构造的网络进行度-度相关性，以及聚类性分析。
-    
-    \begin{table}
-        \centering
-        \begin{tabular}{cccp{38mm}}
-            \toprule
-            \textbf{文档域类型} & \textbf{Java类型} & \textbf{宽度(字节)} & \textbf{说明} \\
-            \midrule
-            BOOLEAN  & boolean &  1  & \\
-            CHAR     & char    &  2  & UTF-16字符 \\
-            BYTE     & byte    &  1  & 有符号8位整数 \\
-            SHORT    & short   &  2  & 有符号16位整数 \\
-            INT      & int     &  4  & 有符号32位整数 \\
-            LONG     & long    &  8  & 有符号64位整数 \\
-            STRING   & String  &  字符串长度  & 以UTF-8编码存储 \\
-            DATE     & java.util.Date & 8 & 距离GMT时间1970年1月1日0点0分0秒的毫秒数 \\
-            BYTE\_ARRAY & byte$[]$ & 数组长度 & 用于存储二进制值 \\
-            BIG\_INTEGER & java.math.BigInteger & 和具体值有关 & 任意精度的长整数 \\
-            BIG\_DECIMAL & java.math.BigDecimal & 和具体值有关 & 任意精度的十进制实数 \\
-            \bottomrule
-        \end{tabular}
-        \caption{测试表格}\label{table:test5}
-    \end{table}
-    
-    表\ref{table:test5}用于测试表格。随后分析了无尺度网络构造过程中，交换机节点与数
-    据节点的角色区别，分析了两者在不同比率下形成的网络形态，以及对网络性能造成的影响。
-    
-    通过理论分析和仿真实验，分析并找出比率因子q的最佳取值。此外，无尺度现象
-    的引入提高了网络的聚类系数，从而在不失灵活性可靠性的基础上，进一步提升
-    了网络的性能。
-    
-    在第\ref{chapter_random}章中，将关注点转移到交换机本身。由于图论难以描述数据中心
-    网络中的交换设备，因此放弃基于图的抽象模型，转而基于多维簇划分的思想，提出并设计
-    了WarpNet网络模型。
-    
-    该网络模型突破了基于图描述的局限性，并对网络的带宽等指标进行理论分析并
-    给出定量描述。最后对比了理论分析、仿真测试结果，并在实际物理环境中进系
-    真实部署，通过6节点的小规模实验以及1000节点虚拟机的大规模实验，表明该模
-    型的理论分析、仿真测试与实际实验吻合，并在网络性能、容错能力、伸缩性灵
-    活性方面得到了进一步的提升。
+    \zhlipsum[1-3]
     
     在第\ref{chapter_experiments}章中，针对网络模型研究这一类工作的共性，设计构造通
     用验证平台系统。以海量虚拟机和虚拟分布式交换机的形式，实现了基于少量物理节点，对
     大规模节点的模拟。其模拟运行的过程与真实运行在实现层面完全一致，运行的结果与真实
     环境线性相关。除为本文所涉若干网络模型提供验证外，可进一步推广到更为广泛的领域，
     为各种网络模型及路由算法的研究工作，提供分析、指导与验证。
-    
+    \begin{backmatter}
+    \fancyhead[C]{\songti\zihao{-5}参考文献}
     % 参考文献。应放在\backmatter之前。
     % 推荐使用BibTeX，若不使用BibTeX时注释掉下面一句。
     %\nocite{*}
     \bibliography{bachelor}
-    %\fancyhead[C]{\songti\zihao{5}参考文献}
     % 不使用 BibTeX
     %\begin{thebibliography}{2}
-
+    \end{backmatter}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % 致谢，应放在《结论》之后
-   % \fancyhead[C]{\songti\zihao{5}致谢}
     \begin{acknowledgement}
+        \fancyhead[C]{\songti\zihao{-5}致谢}
         首先感谢我的母亲韦春花对我的支持。其次感谢我的导师陈近南对我的精心指导和热心帮助。接下来，
         感谢我的师兄茅十八和风际中，他们阅读了我的论文草稿并提出了很有价值的修改建议。
         
         最后，感谢我亲爱的老婆们：双儿、苏荃、阿珂、沐剑屏、曾柔、建宁公主、方怡，感谢
         你们在生活上对我无微不至的关怀和照顾。我爱你们！
     \end{acknowledgement}
-    %\fancyhead[C]{\songti\zihao{5}附录}
-    \begin{backmatter}
-    \chapter{附录 A：彩色插图}
-    \begin{figure}[htbp]
-        \centering
-        \includegraphics[width= 0.55\textwidth]{Figure/Ch1-SC4A}\\
-        \caption{肉豆蔻酰胆碱在SC4A空白及存在下的两亲自组装示意图}
-    \end{figure}
-    \end{backmatter}
+    
+%    \begin{backmatter}
+%    \fancyhead[C]{\songti\zihao{-5}附录}
+%    \chapter{附录 A：彩色插图}
+%    \begin{figure}[htbp]
+%        \centering
+%        \includegraphics[width= 0.55\textwidth]{Figure/Ch1-SC4A}\\
+%        \caption{肉豆蔻酰胆碱在SC4A空白及存在下的两亲自组装示意图}
+%    \end{figure}
+%    \end{backmatter}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

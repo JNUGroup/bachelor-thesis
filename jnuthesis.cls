@@ -36,6 +36,7 @@
 %% \url{http://grawww.nju.edu.cn/content/xw/lwgf.doc}
 %% \end{itemize}
 \newif\ifjnut@adobefonts\jnut@adobefontstrue
+\newif\ifjnut@fandolfonts\jnut@fandolfontstrue %添加
 \newif\ifjnut@sourcefonts\jnut@sourcefontsfalse
 \newif\ifjnut@winfonts\jnut@winfontsfalse
 \newif\ifjnut@linuxfonts\jnut@linuxfontsfalse
@@ -50,27 +51,38 @@
 \newif\ifjnut@replaceperiod\jnut@replaceperiodfalse
 \newif\ifjnut@blindreview\jnut@blindreviewfalse
 \DeclareOption{adobefonts}{\jnut@adobefontstrue
+  \jnut@fandolfontsfalse
+  \jnut@sourcefontsfalse
+  \jnut@winfontsfalse
+  \jnut@linuxfontsfalse
+  \jnut@macfontsfalse}
+\DeclareOption{fandolfonts}{\jnut@fandolfontstrue
+  \jnut@adobefontsfalse
   \jnut@sourcefontsfalse
   \jnut@winfontsfalse
   \jnut@linuxfontsfalse
   \jnut@macfontsfalse}
 \DeclareOption{sourcefonts}{\jnut@sourcefontstrue
   \jnut@adobefontsfalse
+  \jnut@fandolfontsfalse
   \jnut@winfontsfalse
   \jnut@linuxfontsfalse
   \jnut@macfontsfalse}
 \DeclareOption{winfonts}{\jnut@winfontstrue
   \jnut@adobefontsfalse
+  \jnut@fandolfontsfalse
   \jnut@sourcefontsfalse
   \jnut@linuxfontsfalse
   \jnut@macfontsfalse}
 \DeclareOption{linuxfonts}{\jnut@linuxfontstrue
   \jnut@adobefontsfalse
+  \jnut@fandolfontsfalse
   \jnut@sourcefontsfalse
   \jnut@winfontsfalse
   \jnut@macfontsfalse}
 \DeclareOption{macfonts}{\jnut@macfontstrue
   \jnut@adobefontsfalse
+  \jnut@fandolfontsfalse
   \jnut@sourcefontsfalse
   \jnut@winfontsfalse
   \jnut@linuxfontsfalse}
@@ -225,6 +237,15 @@
   \newcommand*{\jnut@enfn@main}{\jnut@enfn@main@adobe}
   \newcommand*{\jnut@enfn@sans}{\jnut@enfn@sans@adobe}
   \newcommand*{\jnut@enfn@mono}{\jnut@enfn@mono@adobe}
+\else
+  \ifjnut@fandolfonts
+  \newcommand*{\jnut@zhfn@songti}{\jnut@zhfn@songti@fandol}
+  \newcommand*{\jnut@zhfn@heiti}{\jnut@zhfn@heiti@fandol}
+  \newcommand*{\jnut@zhfn@kaishu}{\jnut@zhfn@kaishu@fandol}
+  \newcommand*{\jnut@zhfn@fangsong}{\jnut@zhfn@fangsong@fandol}
+  \newcommand*{\jnut@enfn@main}{\jnut@enfn@main@fandol}
+  \newcommand*{\jnut@enfn@sans}{\jnut@enfn@sans@fandol}
+  \newcommand*{\jnut@enfn@mono}{\jnut@enfn@mono@fandol}
 \else
   \ifjnut@winfonts
       \newcommand*{\jnut@zhfn@songti}{\jnut@zhfn@songti@win}
