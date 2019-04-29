@@ -185,7 +185,7 @@
     
     \begin{figure}[htbp]
         \centering
-        \includegraphics[width= \textwidth]{Figure/switchable-light.pdf}\\
+        \includegraphics[scale=0.8]{Figure/switchable-light.pdf}\\
         \caption{电化学方法实现氧化-还原开关表面活性剂：二茂铁基和联吡啶类开关表面活性剂}\label{fig:switchable-light}
     \end{figure}
     
@@ -295,20 +295,26 @@
             \toprule
             \textbf{仪器/试剂} & \textbf{规格/型号} & \textbf{生产厂家} \\
             \midrule
-            硒   &  RG  & 阿达玛斯试剂 \\
-s          硼氢化钠  & AR  & 上海化学试剂有限公司 \\
-            1-溴代十二烷  & CP & 国药集团化学试剂有限公司 \\
-            3-溴丙醇 & java.math.和具体值有关 & 国药集团化学试剂有限公司 \\
-            氯磺酸  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            硫酸钠  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            亚硫酸钠  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            旋转蒸发器  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            超声波清洗器  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            核磁共振谱仪  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            双氧水  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            电子分析天平  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            液相色谱质谱联用仪  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
-            超级恒温水浴  & java.math.B值有关 & 国药集团化学试剂有限公司 \\
+            硒   & GR & 阿达玛斯试剂 \\
+            硼氢化钠  & AR  & 上海化学试剂有限公司 \\
+            1-溴代十二烷
+            1-溴代丁烷  & CP & 国药集团化学试剂有限公司 \\
+            3-溴丙醇 & GR & 阿达玛斯试剂 \\
+            11-溴-1-十一醇 & ?? & 国药集团化学试剂有限公司 \\
+            氯磺酸  & CP & 上海化学试剂有限公司 \\
+            碳酸钠  & ?? & 国药集团化学试剂有限公司 \\
+            十二烷基三甲基溴化铵 & ?? & 国药集团化学试剂有限公司\\
+            30\%过氧化氢  & AR & 上海化学试剂有限公司 \\
+            亚硫酸钠  & AR & 国药集团化学试剂有限公司 \\
+            硫酸钠  & AR & 国药集团化学试剂有限公司 \\
+            超纯水 & Simplicity\ce{^{\textregistered}} UV & 美国Merck Millipore\\
+            电子分析天平  & JY2015 & 梅特勒-托利多有限公司 \\
+            旋转蒸发器  & RE-2000B & 上海亚荣生化仪器厂 \\
+            超声波清洗器  & KQ-100B & 昆山市超声仪器有限公司 \\
+            超级恒温水浴  & ?? & 国药集团化学试剂有限公司 \\
+            核磁共振谱仪  & AVANCE Ⅲ HD 400MHz & 瑞士布鲁克公司 \\
+            液相色谱质谱联用仪  & LCZ/2690 XE/996 & 美国沃特世公司 \\
+            激光光散射仪 & ALV/DLS/SLS-5022F & 德国ALV公司\\
             \bottomrule
         \end{tabular}
         \caption{实验仪器与试剂}\label{table:实验仪器与试剂}
@@ -317,13 +323,15 @@ s          硼氢化钠  & AR  & 上海化学试剂有限公司 \\
     \zhlipsum[1]
     
     \section{含硒表面活性剂的制备}
-    \subsection{含硒表面活性剂的合成路线}
+    \subsection{合成路线}
+    采用图\ref{fig:synthesis}所示合成路线制备含硒表面活性剂3-十二烷基硒-1-丙基硫酸钠(SDSePS)和
+    11-丁基硒-1-十一烷基硫酸钠(SBSeUS)。
     \begin{figure}[htbp]
         \centering
-        \includegraphics[]{Figure/synthesis.pdf}\\
+        \includegraphics[scale=0.9]{figure/synthesis3.pdf}\\
         \caption{含硒表面活性剂的合成路线}\label{fig:synthesis}
     \end{figure}
-    
+    \subsection{实验方法}
     \zhlipsum[1]
     
     \section{囊泡的构筑}
@@ -349,52 +357,81 @@ s          硼氢化钠  & AR  & 上海化学试剂有限公司 \\
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \chapter{实验结果与讨论}\label{chapter:results}
     \section{含硒表面活性剂的表征与分析}
+    \subsection{12+3的结构表征与分析}
     以\ce{CD3OD} (δ = 3.31)为溶剂，其中含有少量的\ce{H2O} (δ = 4.87)\cite{babij2016nmr} ,对纯化后的样品进行
     \ce{^1H} NMR 表征，表征与分析结果如图\ref{fig:NMR-12+3}所示。
     \begin{figure}[htbp]
         \centering
-        \includegraphics[width=.7\textwidth]{figure/nmr1232.pdf}\\
+        \includegraphics[width=.75\textwidth]{figure/nmr123.pdf}\\
+        \caption{SDSePS的核磁氢谱}\label{fig:NMR-12+3}
+    \end{figure}
+     
+    \ce{^1H} NMR (400 MHz, \ce{CD3OD}) δ 0.92 (t, 3H), 1.31-1.41 (overlap, 18H), 1.67 (m, 2H), 2.01 (m, 2H), 2.60 (t, 2H), 
+    2.66 (t, 3H),  4.10 (t, 2H).
+    
+    对 \ce{C12SeAS} 的核磁共振氢谱进行解析，化学位移为 0.921 处的三重峰为 C12SeAS 疏水尾
+    链端的甲基上的氢信号，以其积分个数为 3 计算，结果如表 2-5 所示，实际总氢个数为 31.68，
+    理论氢个数为 31，氢个数基本吻合；如图 2-7 所示，e 处的两个三重峰氢信号为 Se 两端的亚
+    甲基的氢信号，f 处亚甲基上的氢由于靠近极性头基(SO4 - )，出峰位置移动到 4.097，各个氢信
+    号的出峰位置与目标产物能够对应，由此推断检测样品即为目标产物。
+     \begin{figure}[H]
+        \centering
+        \includegraphics[width=.8\textwidth]{figure/mass123.pdf}\\
+        \caption{SDSePS的质谱}\label{fig:NMR-12+3}
+    \end{figure}
+
+HR-ESI-MS m/z 290.1422 [M – H] – (calcd 386.43 for \ce{C15H31SO4Se}).
+%    \begin{figure}[htbp]
+%    \centering
+%        \begin{subfigure}[b]{.475\textwidth}
+%            \centering
+%            \includegraphics[width=\textwidth]{figure/nmr123.pdf}
+%            \caption{核磁}\label{}
+%        \end{subfigure}
+%        \hfill
+%        \begin{subfigure}[b]{.475\textwidth}
+%            \centering
+%            \includegraphics[width=\textwidth]{example-image}
+%            \caption{质谱}\label{}
+%        \end{subfigure}
+%    \caption{12+3结构表征}\label{fig:cleavable-saa}
+%    \end{figure}
+%
+%    \begin{figure}[htbp]
+%        \centering
+%        \begin{subfigure}[b]{.475\textwidth}
+%            \centering
+%            \includegraphics[width=\textwidth]{example-image}
+%            \caption{核磁}\label{}
+%        \end{subfigure}
+%        \hfill
+%        \begin{subfigure}[b]{.475\textwidth}
+%            \centering
+%            \includegraphics[width=\textwidth]{example-image}
+%            \caption{质谱}\label{}
+%        \end{subfigure}
+%        \caption{4+11结构表征}\label{fig:cleavable-saa}
+%    \end{figure}
+    
+    \subsection{4+11的结构表征与分析}
+        以\ce{CD3OD} (δ = 3.31)为溶剂，其中含有少量的\ce{H2O} (δ = 4.87)\cite{babij2016nmr} ,对纯化后的样品进行
+    \ce{^1H} NMR 表征，表征与分析结果如图\ref{fig:NMR-12+3}所示。
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=.75\textwidth]{figure/nmr123.pdf}\\
         \caption{核磁}\label{fig:NMR-12+3}
     \end{figure}
     
-    对 \ce{C12SeAS} 的核磁共振氢谱进行解析，化学位移为 0.921 处的三重峰为 C 12 SeAS 疏水尾
+    对 \ce{C12SeAS} 的核磁共振氢谱进行解析，化学位移为 0.921 处的三重峰为 C12SeAS 疏水尾
     链端的甲基上的氢信号，以其积分个数为 3 计算，结果如表 2-5 所示，实际总氢个数为 31.68，
     理论氢个数为 31，氢个数基本吻合；如图 2-7 所示，e 处的两个三重峰氢信号为 Se 两端的亚
-    甲基的氢信号，f 处亚甲基上的氢由于靠近极性头基(SO 4 - )，出峰位置移动到 4.097，各个氢信
+    甲基的氢信号，f 处亚甲基上的氢由于靠近极性头基(SO4 - )，出峰位置移动到 4.097，各个氢信
     号的出峰位置与目标产物能够对应，由此推断检测样品即为目标产物。
-    
-    \begin{figure}[htbp]
-    \centering
-        \begin{subfigure}[b]{.475\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{figure/nmr123.pdf}
-            \caption{核磁}\label{}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{.475\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{example-image}
-            \caption{质谱}\label{}
-        \end{subfigure}
-    \caption{12+3结构表征}\label{fig:cleavable-saa}
-    \end{figure}
-
     \begin{figure}[htbp]
         \centering
-        \begin{subfigure}[b]{.475\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{example-image}
-            \caption{核磁}\label{}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{.475\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{example-image}
-            \caption{质谱}\label{}
-        \end{subfigure}
-        \caption{4+11结构表征}\label{fig:cleavable-saa}
+        \includegraphics[width=.8\textwidth]{figure/mass123.pdf}\\
+        \caption{质谱}\label{fig:NMR-12+3}
     \end{figure}
-    
     \section{12+3复配囊泡的性质研究}
     \subsection{不同摩尔比复配}
     

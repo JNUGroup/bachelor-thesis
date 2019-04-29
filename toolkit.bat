@@ -14,6 +14,7 @@ echo.            2 - wordcount
 echo.            3 - pandoc
 echo.            4 - clean
 echo.            5 - pdftk
+echo.            0 - 退出
 echo.-----------------------------------------------------------
 set input=
 set /p input=请选择【输入序号,然后回车】：
@@ -22,10 +23,12 @@ if /i '%input%'=='2' goto main2
 if /i '%input%'=='3' goto main3
 if /i '%input%'=='4' goto main4
 if /i '%input%'=='5' goto main5
+if /i '%input%'=='0' goto end
 cls
 echo.
 pause
 goto main
+
 :end
 exit
 
