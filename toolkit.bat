@@ -14,6 +14,7 @@ echo.            2 - wordcount
 echo.            3 - pandoc
 echo.            4 - clean
 echo.            5 - pdftk
+echo.            6 - git push
 echo.            0 - ÍË³ö
 echo.-----------------------------------------------------------
 set input=
@@ -23,6 +24,7 @@ if /i '%input%'=='2' goto main2
 if /i '%input%'=='3' goto main3
 if /i '%input%'=='4' goto main4
 if /i '%input%'=='5' goto main5
+if /i '%input%'=='6' goto main6
 if /i '%input%'=='0' goto end
 cls
 echo.
@@ -82,5 +84,14 @@ goto main
 pdftk.exe A=archive/cover.pdf B=bachelor.pdf cat A1 B2-end output bachelor-v2.pdf
 DEL bachelor.pdf
 RENAME bachelor-v2.pdf bachelor.pdf
+pause
+goto main
+
+:main6
+git add .
+set input=
+set /p input=ÇëÊäÈë±¸×¢:
+git commit -m '%input%'
+git push
 pause
 goto main
