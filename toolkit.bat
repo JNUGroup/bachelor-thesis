@@ -91,7 +91,7 @@ goto main
 git add .
 set input=
 set /p input=ÇëÊäÈë±¸×¢:
-git commit -m '%input%'
+git commit -m %input%
 git push
 pause
 goto main
