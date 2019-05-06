@@ -284,11 +284,51 @@
 %    除以上类型的开关表面活性剂之外，还有酶催化\cite{ku2011}
 %【Enzyme-triggered model self-assembly in surfactant–cyclodextrin systems】的开关表面活性剂有待讨论。
     
-    
     \section{含硒表面活性剂}
+    含硒表面活性剂是一类新型的氧化还原型开关表面活性剂，2010年Zhang Xi等\cite{zhangxi2010,zhangxi20102}
+    首次报道了一种含硒阳离子表面活性剂，利用其与具有羧酸根的两亲嵌段共聚物进行自组装，形成具有
+    氧化响应性的胶束，之后其课题组报道了多例利用硒原子实现的具有氧化还原刺激响应性的胶束体系，
+    硒原子分别位于两亲嵌段共聚物内部和侧链。
+    
+    2015年Liu X F等\cite{zhang2015}报道了含硒磺基甜菜碱类表面活性剂，
     
     \section{囊泡}
+    囊泡是一种由表面活性剂双分子层闭合而成的聚集体。双分子层内壁和外壁均为
+    亲水头基，内腔充满水相，疏水尾链则被包裹在双分子层内部（反相囊泡在有机相中形成，其双分子层
+    恰好翻转），囊泡一般是由这样的一层或多层双分子层闭合而成，一般具有球形结构，此外还有椭球形、
+    扁球形等。
     
+    囊泡是表面活性剂分子构成的聚集体结构中的一种，按照Israelachvili和Mitchell等人提出的临界堆积参数
+    理论 (critical packing parameter theory)，可以通过表面活性剂分子的几何形状对其在水溶液中的聚集体进行预测：
+    \begin{equation}\label{eq:cpp}
+        p=\frac{\upsilon}{al}
+    \end{equation}
+    
+    式\ref{eq:cpp}中，$p$为临界堆积参数，$a$为亲水头基平均占据横截面积，$l$为疏水链平均链长，$\upsilon$
+    为疏水链的体积。当$p<1/3$时一般形成球状胶束或不连续的立方相；当$1/3<p<1/2$时易形成椭球形或棒状
+    胶束；当$1/2<p<1$时可形成囊泡、碟形胶束或层状相等不同曲率的双分子层结构；当$p>1$时会形成反相
+    结构，见图\ref{fig:scheme-cpp}所示。
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width= .826\textwidth]{figure/scheme-cpp.png}\\
+        \caption{临界堆积参数理论}\label{fig:scheme-cpp}
+    \end{figure}
+
+    囊泡显著区别与胶束等聚集体结构的一个特征是，具有囊泡结构的溶液在外观上呈现淡蓝色，并且囊泡属于
+    各向异性的相，在偏光……
+    
+    \subsection{囊泡的制备方法}
+    脂质体是发现和研究最早的囊泡体系，所不同的是其双分子层为磷脂双分子层。
+    
+    制备方法：乙醇注射法、超声法等
+    
+    阴阳离子表面活性剂复配自发囊泡，稳定性
+    
+    包括形成过程，临界堆积参数理论，四个形成过程
+
+    %\subsection{怎样表征}
+    
+    \subsection{囊泡的应用}
     
     \section{论文的目的与创新}
     \subsection{研究目的}
@@ -370,12 +410,21 @@
     
     \section{囊泡的性质研究}
     \subsection{不同摩尔比}
+    利用母液按摩尔比1:9至9:1配置不同摩尔比的囊泡体系，观察外观现象变化
     
     \subsection{稳定性}
+    利用DLS测试囊泡粒径，其随时间的变化，另一方面加入\ce{Na2SO4}测试囊泡的耐盐状况，该囊泡体系伪含盐(NaBr)囊泡体系，
+    选择\ce{Na2SO4}的原因是之后氧化还原
     
     \subsection{不同浓度}
+    使用母液稀释得到0.5 mmol/L、1 mmol/L、2 mmol/L、2.5 mmol/L、5 mmol/L、10 mmol/L的阴阳离子表面活性剂溶液，分别按
+    上步选定的摩尔比配置不同浓度的囊泡体系，静置12 h，记录外观，利用DLS测试粒径
     
     \subsection{氧化还原响应}
+    采用\ce{H2O2}作为氧化剂，\ce{Na2SO3}作为还原剂，初步采用1.2被氧化剂进行氧化，氧化后使用
+    薄层色谱监测氧化完全，DLS测试体系内聚集体状况
+    
+    加入1.2被还原剂进行还原，还原后测试DLS随时间的变化，测试还原时间，进行多个氧化还原循环
     
     
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -546,32 +595,33 @@ HR-ESI-MS m/z 290.1422 [M – H] – (calcd 386.43 for \ce{C15H31SO4Se}).
     
     \begin{figure}[htbp]
         \centering
-        \includegraphics[height=4.5cm]{example-image}\\
-        \caption{12+3氧化还原循环粒径}\label{fig:}
+        \includegraphics[width=.4\textwidth]{figure/SDSePS-nmr-diff.pdf}\\
+        \caption{12+3对比核磁}\label{fig:SDSePs-nmr-diff}
     \end{figure}
     
     \begin{figure}[htbp]
         \centering
-        \includegraphics[height=4.5cm]{example-image}\\
-        \caption{12+3一次还原}\label{fig:}
+        \includegraphics[width=.76\textwidth]{figure/vesicle-Re-stability.pdf}\\
+        \caption{一次还原稳定性}\label{fig:vesicle-Re-stability}
     \end{figure}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=.8\textwidth]{figure/SDSePS-redox-circle.pdf}\\
+        \caption{SDSePS氧化还原循环粒径}\label{fig:SDSePS-redox-circle}
+    \end{figure}
+    
     \subsubsection{4+11氧化还原}
     \begin{figure}[htbp]
         \centering
-        \includegraphics[height=4.5cm]{example-image}\\
-        \caption{12+3点板氧化确认}\label{fig:}
+        \includegraphics[height=5.5cm]{figure/SDSePS-Ox-tlc}\\
+        \caption{12+3点板氧化确认}\label{figSDSePS-Ox-tlc:}
     \end{figure}
     
     \begin{figure}[htbp]
         \centering
         \includegraphics[height=4.5cm]{example-image}\\
         \caption{12+3氧化还原循环粒径}\label{fig:}
-    \end{figure}
-    
-    \begin{figure}[htbp]
-        \centering
-        \includegraphics[height=4.5cm]{example-image}\\
-        \caption{12+3一次还原}\label{fig:}
     \end{figure}
     
     \begin{figure}[htbp]

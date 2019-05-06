@@ -84,6 +84,7 @@ goto main
 pdftk.exe A=archive/cover.pdf B=bachelor.pdf cat A1 B2-end output bachelor-v2.pdf
 DEL bachelor.pdf
 RENAME bachelor-v2.pdf bachelor.pdf
+COPY bachelor.pdf "F:/Document/OneDrive/Bachelor/bachelor.pdf"
 pause
 goto main
 
