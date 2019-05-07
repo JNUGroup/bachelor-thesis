@@ -51,7 +51,7 @@ goto main
 
 :main3
 cls
-pandoc -s bachelor.tex -o bachelor.docx
+pandoc -s bachelor.tex -o ./archive/bachelor.docx
 pause
 goto main
 

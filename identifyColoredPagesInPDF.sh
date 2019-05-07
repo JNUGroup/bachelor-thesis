@@ -24,7 +24,7 @@ echo "Pages: $PAGES"
 N=1
 while (test "$N" -le "$PAGES")
 do
-    COLORSPACE=$( identify -format "%[colorspace]" "$FILE[$((N-1))]" )
+    COLORSPACE=$( magick identify -format "%[colorspace]" "$FILE[$((N-1))]" )
     echo "$N: $COLORSPACE"
     if [[ $DOUBLEPAGE -eq -1 ]]
     then
