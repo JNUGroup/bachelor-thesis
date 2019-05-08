@@ -15,6 +15,7 @@ echo.            3 - pandoc
 echo.            4 - clean
 echo.            5 - pdftk
 echo.            6 - git push
+echo.            7 - ColorPages
 echo.            0 - ÍË³ö
 echo.-----------------------------------------------------------
 set input=
@@ -25,6 +26,7 @@ if /i '%input%'=='3' goto main3
 if /i '%input%'=='4' goto main4
 if /i '%input%'=='5' goto main5
 if /i '%input%'=='6' goto main6
+if /i '%input%'=='7' goto main7
 if /i '%input%'=='0' goto end
 cls
 echo.
@@ -94,5 +96,11 @@ set input=
 set /p input=ÇëÊäÈë±¸×¢:
 git commit -m %input%
 git push
+pause
+goto main
+
+:main7
+gswin64c -q -o - -sDEVICE=inkcov bachelor.pdf > colorpages.txt
+python ColorPages.py
 pause
 goto main
