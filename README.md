@@ -47,7 +47,7 @@
 
 * 支持自动替换所有中文句号为英文句点，方便理工科论文排版：`replaceperiod` 选项;
 * 字体选项：`winfonts`(打印用)；`fandolfonts`(查重用).
-* colorlinks: 开关位于`jnuthesis.cls` line 72 
+* colorlinks: 开关位于`jnuthesis.cls` line 172 
 
 
 #### 关于字体要求与等宽字体
