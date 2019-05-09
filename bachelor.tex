@@ -413,12 +413,12 @@
     
     \section{含硒表面活性剂的制备}
     \subsection{合成路线}
-    按图\ref{fig:synthesis-scheme}所示合成路线制备两种含硒表面活性剂3-十二烷基硒-1-丙基硫酸钠 
-    (SDSePS) 和11-丁基硒-1-十一烷基硫酸钠 (SBSeUS)。
+    按图\ref{fig:scheme-synthesis}所示合成路线制备两种含硒表面活性剂3-十二烷基硒-1-丙基硫酸钠 
+    (5a, SDSePS) 和11-丁基硒-1-十一烷基硫酸钠 (5b, SBSeUS)。
     \begin{figure}[htbp]
         \centering
-        \includegraphics[scale=0.92]{figure/synthesis-scheme.pdf}\\
-        \caption{含硒表面活性剂的合成路线}\label{fig:synthesis-scheme}
+        \includegraphics[scale=1]{figure/scheme-synthesis.pdf}\\
+        \caption{含硒表面活性剂的合成路线}\label{fig:scheme-synthesis}
     \end{figure}
 
     \subsection{实验方法}
@@ -743,7 +743,9 @@
     
     图\ref{fig:SDSePS-Ox-tlc}中左侧点样为提纯的SDSePS样品，中间点样为氧化6 h后的SDSePS/DTAB
     复配体系，右侧点样为SDSePS/DTAB复配体系，中间样品点已不可见SDSePS样品点，说明
-    体系中的SDSePS已经氧化完全。
+    体系中的SDSePS已经氧化完全，图\ref{fig:SDSePS-redox-radius}为氧化循环过程中复配体系中
+    聚集体的粒径分布情况，从中也可知氧化完全后，原40 nm左右的囊泡不复存在，仅存在平均流体力学
+    半径在3 nm左右的聚集体和少量200 nm的聚集体，可以认为前者是胶束。
     
     \begin{figure}[htbp]
         \begin{subfigure}[]{.5\textwidth}
@@ -760,44 +762,88 @@
         \label{fig:氧化还原刺激响应性}
     \end{figure}
     
-    \begin{figure}[htbp]
-        \centering
-        \includegraphics[width=.4\textwidth]{figure/SDSePS-nmr-diff.pdf}\\
-        \caption{12+3对比核磁}\label{fig:SDSePs-nmr-diff}
-    \end{figure}
+    向经\ce{H2O2}氧化过的复配体系中加入1.2倍阴离子表面活性剂的量的\ce{Na2SO3}进行还原，还原后
+    溶液恢复蓝色外观，其中的聚集体粒径分布变化见图\ref{fig:SDSePS-redox-radius}，从中可知聚集体基本
+    恢复到原有尺寸范围，但相较于原来略大。
+%    \begin{figure}[htbp]
+%        \centering
+%        \includegraphics[width=.4\textwidth]{figure/SDSePS-nmr-diff.pdf}\\
+%        \caption{12+3对比核磁}\label{fig:SDSePs-nmr-diff}
+%    \end{figure}
+    
+    针对还原后的体系连续监测其中的聚集体变化10天，其变化图\ref{fig:vesicle-Re-stability}，可知还原的
+    过程可能十分迅速，10 min后监测其中的粒径分布，仅有约40 nm左右的范围内存在聚集体分布。在随后
+    的数日内聚集体粒径缓慢增长，基本在1天后聚集体即保持相对稳定。
     
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=.76\textwidth]{figure/vesicle-Re-stability.pdf}\\
         \caption{一次还原稳定性}\label{fig:vesicle-Re-stability}
     \end{figure}
-
+    
+    对SDSePS/DTAB复配体系连续进行10次的氧化还原过程，采用动态光散射测试其中的聚集体结果
+    见图\ref{fig:SDSePS-redox-circle}。
     \begin{figure}[htbp]
         \centering
-        \includegraphics[width=.8\textwidth]{figure/SDSePS-redox-circle.pdf}\\
+        \includegraphics[width=.86\textwidth]{figure/SDSePS-redox-circle.pdf}\\
         \caption{SDSePS氧化还原循环粒径}\label{fig:SDSePS-redox-circle}
     \end{figure}
+    从中可知构筑的SDSePS/DTAB囊泡具有很好的氧化还原刺激响应性，能够进行多次的氧化还原循环，
+    在囊泡和胶束的聚集体结构之间切换。今从耐盐性的角度看（图\ref{fig:SDSePS-salt}），这一复配体系
+    可以进行近1300次氧化还原过程。
     
     \subsection{SBSeUS/DTAB复配体系的氧化还原响应性}
-    向摩尔比为4:6的
-    \begin{figure}[htbp]
-        \centering
-        \includegraphics[height=5.5cm]{figure/SDSePS-Ox-tlc}\\
-        \caption{12+3点板氧化确认}\label{figSDSePS-Ox-tlc:}
-    \end{figure}
-    
-    \begin{figure}[htbp]
-        \centering
-        \includegraphics[height=4.5cm]{example-image}\\
-        \caption{12+3氧化还原循环粒径}\label{fig:}
-    \end{figure}
-    
+    向摩尔比为4:6的SBSeUS/DTAB中加入1.2倍\ce{H2O2}，恒温30 ℃静置，发现需经72 h后体系方呈澄清透明，
+    相同条件下于40 ℃恒温静置进行氧化，需要42 h体系方呈澄清透明。相比于SDSePS/DTAB复配体系，
+    发现氧化过程明显更加困难，这可能是由于SBSeUS/DTAB复配体系中形成了囊泡这一聚集体结构（见示意图\ref{fig:scheme-vesicle}），
+    相较于SDSePS中Se原子更加靠近亲水头基（图\ref{fig:scheme-synthesis}），易于被\ce{H2O2}氧化，SBSePS
+    中Se原子处于疏水尾链中，形成囊泡后Se原子位于双分子层内部，不易于氧化。同时相同条件下，同浓度的
+    表面活性剂SBSeUS的水溶液在40 ℃下5 h内即可完成氧化，这也印证了以上说法。以上实验中氧化完全与否
+    均采用薄层色谱监测。
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.46\linewidth]{figure/vesicle-scheme.pdf}\\
-        \caption{SBSeUS/DTAB囊泡示意图}\label{fig:vesicle-scheme}
+        \caption{SBSeUS/DTAB囊泡示意图}\label{fig:scheme-vesicle}
     \end{figure}
-    [一次还原稳定性]加入后立即
+    
+    继续增加\ce{H2O2}浓度，发现2.0倍\ce{H2O2}可在40 ℃下24 h可将SBSeUS/DTAB复配体系囊泡
+    瓦解，薄层色谱结果显示表面活性剂SBSeUS已被氧化完全，见图\ref{fig:SBSeUS-Ox-tlc}。
+    采用动态光散射测试氧化后的复配体系，测试结果见图\ref{fig:SBSeUS-redox-radius}，从中可以看出
+    氧化后体系中主要有两个范围内有聚集体存在，其中3 nm左右的应为胶束相，另外在200 nm以上
+    也检测出聚集体存在，这一现象与SDSePS/DTAB复配体系氧化后类似，但200 nm以上区域存在的
+    聚集体更加多。
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[height=5.5cm]{figure/SBSeUS-Ox-tlc}\\
+        \caption{SBSeUS点板氧化确认}\label{fig:SBSeUS-Ox-tlc}
+    \end{figure}
+    
+    将上述氧化后的体系采用2.0倍\ce{Na2SO3}进行还原，氧化还原过程中的外观变化及体系内聚集体
+    分布变化见图\ref{fig:SBSeUS/DTAB氧化还原刺激响应性}，对还原后的复配体系中的聚集体连续使用
+    动态光散射监测10天，结果见图\ref{fig:vesicle-Re-stability}。
+    \begin{figure}[htbp]
+        \begin{subfigure}[]{.5\textwidth}
+            \centering
+            \includegraphics[width=.98\textwidth]{figure/SBSeUS-redox-radius.pdf}
+            \caption{氧化还原过程中SBSeUS/DTAB复配体系囊泡的粒径变化}\label{fig:SBSeUS-redox-radius}
+        \end{subfigure}%
+        \begin{subfigure}[]{.5\textwidth}
+            \centering
+            \includegraphics[width=.8\textwidth]{figure/scheme-SBSeUS-redox.pdf}
+            \caption{SBSeUS/DTAB复配体系在氧化还原后的外观现象}\label{fig:scheme-SBSeUS-redox}
+        \end{subfigure}%
+        \caption{氧化还原刺激响应性}
+        \label{fig:SBSeUS/DTAB氧化还原刺激响应性}
+    \end{figure}
+    
+    对SBSeUS/DTAB进行了3次的氧化还原循环，这一体系也具有氧化还原刺激响应性。
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=.6\textwidth]{figure/SBSeUS-redox-circle}\\
+        \caption{4+11氧化还原循环粒径}\label{fig:SBSeUS-redox-circle}
+    \end{figure}
+    
+    
     
     \section{本章小结}
 
