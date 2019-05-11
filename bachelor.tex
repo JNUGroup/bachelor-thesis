@@ -31,17 +31,18 @@
     \frontmatter
     % 论文的中文摘要
     \begin{abstract}
-        刺激响应型表面活性剂是什么，有那些刺激手段，在此情况下包含一般性刺激响应型表面
-        活性剂如可分解表面活性剂，开关表面活性剂是可逆地进行……的一类表面活性剂，含硒表面活性剂
-        是一类新型的开关表面活性剂，其氧化条件温和，优点……而囊泡是一种聚集体形式，自发囊泡……
-        阴阳离子表面活性剂复配囊泡……利用
-        含硒表面活性剂构筑阴阳离子表面活性剂复配囊泡
+        刺激响应型表面活性剂是在外界刺激手段的作用下，其界面性质和相行为能够发生变化，常见的
+        刺激手段有光、热、磁场、酸碱、氧化还原以及酶等，开关表面活性剂是一类具有刺激响应性且
+        能够可逆地调解界面性质的表面活性剂。含硒表面活性剂是一类新型的氧化还原型开关表面活性剂，
+        其氧化还原条件温和，响应迅速。囊泡是表面活性剂的一种聚集体形式，自发囊泡是一种易于制备
+        且热力学稳定的囊泡体系。具有氧化还原刺激响应性的囊泡体系在药物装载及靶向释放等领域具有
+        应用价值。
         
         本论文中制备了两种含硒硫酸盐型阴离子表面活性剂，利用含硒阴离子表面活性剂与阳离子表面活性剂
-         (DTAB) 进行复配，从而构筑囊泡体系，因硒醚可以被温和的氧化和还原，因此囊泡体系具有
+         (DTAB) 进行复配，构筑了两种囊泡体系，因硒醚可以被温和地氧化和还原，因此所制备的囊泡体系具有
          氧化还原刺激响应性。论文研究了阴阳离子表面活性剂的最佳复配摩尔比，并对囊泡的稳定性、
          耐盐性进行探究，考察了不同摩尔比下复配体系内聚集体的组装情况，对囊泡的氧化还原刺激
-         响应性进行研究。最后对两种含硒阴离子表面活性剂同阳离子表面活性剂的复配体系各方面性质
+         响应性进行着重考察。最后对两种含硒阴离子表面活性剂同阳离子表面活性剂的复配体系各方面性质
          进行了比较，发现两种复配体系各方面性质具有一致性，但是硒原子靠近亲水基团的阴离子构筑
          的囊泡体系其易氧化程度明显优于硒原子位于疏水尾链的。
         \keywords{开关表面活性剂；含硒表面活性剂；氧化还原刺激响应性；囊泡}
@@ -49,6 +50,27 @@
     
     % 论文的英文摘要
     \begin{englishabstract}
+        Stimulating responsive surfactants can change their interfacial properties and phase behavior 
+        under the influence of external stimuli. Common stimuli include light, heat, magnetic field, acid 
+        and alkali, redox and enzymes. Switching surfactants are A class of surfactants that are responsive 
+        to responsiveness and that reversibly mediate interfacial properties. Selenium-containing surfactants 
+        are a new class of redox-type switch surfactants with mild redox conditions and rapid response. 
+        Vesicles are an aggregate form of surfactants, which are an easily prepared and thermodynamically 
+        stable vesicle system. The vesicle system with redox stimuli responsiveness has application value
+         in the fields of drug loading and targeted release.
+        
+        In this paper, two kinds of selenium-containing sulfate anionic surfactants were prepared. Two kinds 
+        of vesicle systems were constructed by compounding selenium-containing anionic surfactants with 
+        cationic surfactants (DTAB). Because selenoethers can be mildened. Oxidation and reduction, 
+        so the prepared vesicle system has redox stimuli responsiveness. In this paper, the optimal 
+        compounding molar ratio of anionic and cationic surfactants was studied, and the stability and 
+        salt tolerance of vesicles were investigated. The assembly of aggregates in complex systems 
+        at different molar ratios was investigated. The redox stimuli responsiveness was investigated. 
+        Finally, the properties of two kinds of compound systems containing selenium-containing anionic 
+        surfactants and cationic surfactants were compared. It was found that the properties of the two 
+        complex systems were consistent, but the anion construction of selenium atoms close to the 
+        hydrophilic groups. The vesicle system is more susceptible to oxidation than the selenium atom is 
+        located in the hydrophobic tail chain.
         % 英文关键词。关键词之间用英文半角逗号隔开，末尾无符号。
         \englishkeywords{switchable surfactant, selenium-containing surfactant, redox-responsive, vesicle}
     \end{englishabstract}
@@ -322,6 +344,13 @@
         \caption{临界堆积参数理论预测的表面活性剂聚集体形态\cite{salim2014}}\label{fig:scheme-cpp}
     \end{figure}
 
+    其中，对碳氢链为直链的表面活性剂分子，$\upsilon$和$l$可按Tanford方程计算：
+    \begin{align}\label{eq:cpp2}
+        \upsilon &= 27.4+26.9n\\
+        l &= 1.5+1.265n
+    \end{align}
+    式\ref{eq:cpp2}中n为疏水碳链碳原子数。
+    
     囊泡显著区别于胶束等聚集体结构的一个特征是，具有囊泡结构的溶液在外观上呈现淡蓝色，并且囊泡属于
     各向异性的相，在偏光片下呈现双折射纹理，在显微镜中通常能够观察到马耳他十字花\cite{刘洪国2016}。
         
@@ -348,12 +377,19 @@
     截面积所导致的\cite{刘洪国2016}。但同时也因为阴/阳离子对的形成造成聚集体表面电荷密度下降，从而使得
     在接近等摩尔量混合时体系不稳定，产生沉淀。
     
-    除阴阳离子表面活性剂复配体系外，……
+    除阴阳离子表面活性剂复配体系外，嵌段共聚物、糖酯类分子、小分子表面活性剂体系如双尾链的阳离子表面
+    活性剂、高价金属离子表面活性剂/长链烷基氢氧化铵复配体系和脂肪酸及其助表面活性剂等体系中也可自发
+    形成囊泡\cite{刘洪国2016}。
         
     \subsection{囊泡的应用}
     囊泡可因其结构独特可用于生物膜模拟、软模板或微反应器、药物装载和靶向释放以及毛细管电动色谱等
     领域\cite{蒋玲玲2018}。
     
+    囊泡因其结构独特，可提供不同的微环境包括水相空腔、疏水双分子层以及囊泡外表面，可用于合成微纳米
+    材料，并且由于合成简单且易于脱除相对于传统硬模板具有较大优势。
+    
+    药物载体可以起到改变药物在体内分布并具有靶向释放作用，研究表明人体病变部位活性氧水平会显著升高，
+    因此能够具有活性氧物种刺激响应性的药物载体能够……    
     \begin{figure}[htbp]
         \centering
         \includegraphics[width= .426\textwidth]{figure/vesicle-ros.png}\\
@@ -399,7 +435,7 @@
             1-溴代十二烷
             1-溴代丁烷  & CP & 国药集团化学试剂有限公司 \\
             3-溴丙醇 & GR & 阿达玛斯试剂 \\
-            11-溴-1-十一醇 & GR & 国药集团化学试剂有限公司 \\
+            11-溴-1-十一醇 & GR & 阿达玛斯试剂 \\
             氯磺酸  & CP & 上海化学试剂有限公司 \\
             碳酸钠  & AR & 国药集团化学试剂有限公司 \\
             十二烷基三甲基溴化铵 & CP & 国药集团化学试剂有限公司\\
@@ -556,22 +592,21 @@
 %    \end{figure}
     
     \subsection{SBSeUS的结构表征与分析}
-        以\ce{CD3OD}为溶剂，对纯化后的样品进行    \ce{^1H} NMR 表征，表征结果如图\ref{fig:NMR-12+3}所示。
+        以\ce{CD3OD}为溶剂，对纯化后的样品进行    \ce{^1H} NMR 表征，表征结果如图\ref{fig:SBSeUS-nmr}所示。
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=.75\textwidth]{figure/SBSeUS-nmr.pdf}\\
         \caption{SBSeUS的核磁氢谱}\label{fig:SBSeUS-nmr}
     \end{figure}
     
-    \ce{^1H} NMR (400 MHz, \ce{CD3OD}, 图\ref{fig:SBSeUS-nmr}) δ 0.92 (t, \textit{J}=8.0 Hz, 3H), 1.31-1.41 (overlap, 18H), 
-    1.67 (m, 2H), 2.01 (m, 2H), 2.60 (t, \textit{J}=8.0 Hz, 2H), 2.66 (t, \textit{J}=8.0 Hz, 2H),  4.10 (t, \textit{J}=6.0 Hz, 2H).
+    \ce{^1H} NMR (400 MHz, \ce{CD3OD}, 图\ref{fig:SBSeUS-nmr}) δ 0.95 (t, \textit{J}=7.3 Hz, 3H), 1.27-1.49 (overlap, 16H), 
+    1.60-1.73 (m, 6H), 2.52-2.61 (m, 4H), 3.98-4.04 (t, \textit{J}=6.6 Hz, 2H).
     
-    对SDSePS的核磁共振氢谱进行解析，图\ref{fig:SBSeUS-nmr}中，$\delta$ = 3.31的峰为\ce{CD3OD}溶剂残留峰，
+    对SBSeUS的核磁共振氢谱进行解析，图\ref{fig:SBSeUS-nmr}中，$\delta$ = 3.31的峰为\ce{CD3OD}溶剂残留峰，
     $\delta$ = 4.87为水峰\cite{波谱解析} ，峰a为 SDSePS 疏水链端甲基的氢信号，以其积分个数为 3 计算，
-    实际总氢个数为 31.68，理论氢个数为 31，氢个数基本吻合；峰b为长碳链出峰，氢个数为18；峰c、d分别为Se的两端
-    $\beta$H出峰，其中峰d更靠近极性头基(\ce{-SO4^-})向低场移动；峰e、f分别为Se的两端$\alpha$位亚甲基氢出峰；
-    $\delta$ = 4.10处峰g为靠近极性头基(\ce{-SO4^-})的亚甲基氢出峰。各峰化学位移与氢个数均可与目标产物对应，
-    由此推断所测样品即为目标产物。
+    实际总氢个数为 31.58，理论氢个数为 31，氢个数基本吻合；峰b为碳链出峰，氢个数为16；峰c分别为Se的两端
+    $\beta$H出峰；峰c分别为Se的两端$\alpha$位亚甲基氢出峰；$\delta$ = 4.01处峰e为靠近极性头基(\ce{-SO4^-})的亚甲基氢出峰。
+    各峰化学位移与氢个数均可与目标产物对应，由此推断所测样品即为目标产物。
     
     以\ce{CH3OH}为溶剂，对SDSePS采用负离子模式进行 ESI-MS 测试，测试结果如图\ref{fig:SBSeUS-mass}所示。
     \begin{figure}[htbp]
@@ -580,7 +615,7 @@
         \caption{SBSeUS的质谱}\label{fig:SBSeUS-mass}
     \end{figure}
     
-    负离子模式下，相对强度最高的$m/z = 387$的峰应为\ce{C12H25SeC3H6SO4-}的分子离子峰，与\ce{C15H31SO4Se}
+    负离子模式下，相对强度最高的$m/z = 387$的峰应为\ce{C4H9SeC11H22SO4-}的分子离子峰，与\ce{C15H31SO4Se}
     的计算结果386.42基本相符，同时硒有多种稳定的同位素，也与测试结果相符合。
 
     \section{复配囊泡的构筑}
@@ -649,7 +684,7 @@
     对于耐盐性，选择以少量多次的方式不断加入\ce{Na2SO4}直至囊泡相消失，选用\ce{Na2SO4}是由于本论文中
     设计的含硒阴离子表面活性剂的氧化还原刺激响应性中，采用\ce{Na2SO3}作为还原剂，会产生
     \ce{Na2SO4}副产物，与此同时，本论文涉及的阴阳离子表面活性剂复配体系为含盐体系（阴阳离子
-    表面活性剂带入的反离子），其最多含盐 (NaBr) 不会超过体系浓度的0.5倍，这相较于加入的\ce{Na2SO4}
+    表面活性剂带入的反离子），其最多含盐 (NaBr) 不会超过体系浓度的0.5倍 ($0.25 \times 10^{-3}$ mol/L)，这相较于加入的\ce{Na2SO4}
     的量非常低。
     
     对于相对时间的稳定性，根据外观现象、动态光散射测试结果及耐盐性选择一个含有囊泡相的最佳摩尔配比，
@@ -751,11 +786,12 @@
     
     图\ref{fig:vesicle-concentration-line}显示了SDSePS/DTAB和SBSeUS/DTAB两种复配体系
     中聚集体随着复配溶液浓度的变化情况。其中SDSePS/DTAB复配体系在其浓度小于等于1 mmol/L
-    时均存在粒径较大的聚集体存在，一般不认为这是囊泡[？]，当溶液浓度达2 mmol/L时，体系中的
+    时均存在粒径较大的聚集体存在，一般不认为这是囊泡【？】，当溶液浓度达2 mmol/L时，体系中的
     聚集体尺寸急剧下降到平均流体动力学半径100 nm一下，当浓度达2.5 mmol/L以后，粒径
-    变化趋势趋于平缓，基本在40 nm左右，但尺寸继续随浓度升高而降低。【原因】SBSeUS/DTAB
-    复配体系的粒径及其变化趋势基本同SDSePS/DTAB复配体系一致，【这说明了……】
-    
+    变化趋势趋于平缓，基本在40 nm左右，但尺寸继续随浓度升高而降低。【解释？】SBSeUS/DTAB
+    复配体系的粒径及其变化趋势基本同SDSePS/DTAB复配体系一致，这可能是由于碳链中掺杂Se原子
+    对表面活性剂分子结构影响不大，因此两种复配体系的性质具有一定相似性。
+        
     \section{囊泡体系的氧化还原刺激响应性}
     \subsection{SDSePS/DTAB复配体系的氧化还原响应性}
     向摩尔比为4:6的SDSePS/DTAB复配体系中加入相应于SDSePS 1.2倍量的\ce{H2O2}，30 ℃下
@@ -770,13 +806,15 @@
     复配体系，右侧点样为SDSePS/DTAB复配体系，中间样品点已不可见SDSePS样品点，说明
     体系中的SDSePS已经氧化完全，图\ref{fig:SDSePS-redox-radius}为氧化循环过程中复配体系中
     聚集体的粒径分布情况，从中也可知氧化完全后，原40 nm左右的囊泡不复存在，仅存在平均流体力学
-    半径在3 nm左右的聚集体和少量200 nm的聚集体，可以认为前者是胶束。
+    半径在3 nm左右的聚集体和少量200 nm的聚集体，前者可能是溶液中的胶束，这可能是由于SDSePS
+    氧化后其亲水头基变大，根据临界堆积参数理论（式\ref{eq:cpp}），此时$p$减小，因此不再能够构成
+    囊泡。
     
     \begin{figure}[htbp]
         \begin{subfigure}[]{.5\textwidth}
             \centering
             \includegraphics[width=.98\textwidth]{figure/SDSePS-redox-radius.pdf}
-            \caption{氧化还原过程中SDSePS/DTAB复配体系囊泡的粒径变化}\label{fig:SDSePS-redox-radius}
+            \caption{氧化还原过程中SDSePS/DTAB复配体系\\ 囊泡的粒径变化}\label{fig:SDSePS-redox-radius}
         \end{subfigure}%
         \begin{subfigure}[]{.5\textwidth}
             \centering
@@ -814,7 +852,7 @@
         \caption{SDSePS氧化还原循环粒径}\label{fig:SDSePS-redox-circle}
     \end{figure}
     从中可知构筑的SDSePS/DTAB囊泡具有很好的氧化还原刺激响应性，能够进行多次的氧化还原循环，
-    在囊泡和胶束的聚集体结构之间切换。今从耐盐性的角度看（图\ref{fig:SDSePS-salt}），这一复配体系
+    在囊泡和胶束的聚集体结构之间切换。仅从耐盐性的角度看（图\ref{fig:SDSePS-salt}），这一复配体系
     可以进行近1300次氧化还原过程。
     
     \subsection{SBSeUS/DTAB复配体系的氧化还原响应性}
@@ -832,7 +870,8 @@
     \end{figure}
     
     继续增加\ce{H2O2}浓度，发现2.0倍\ce{H2O2}可在40 ℃下24 h可将SBSeUS/DTAB复配体系囊泡
-    瓦解，薄层色谱结果显示表面活性剂SBSeUS已被氧化完全，见图\ref{fig:SBSeUS-Ox-tlc}。
+    瓦解，薄层色谱结果显示表面活性剂SBSeUS已被氧化完全，见图\ref{fig:SBSeUS-Ox-tlc}，此时复配
+    体系澄清透明，见图\ref{fig:scheme-SBSeUS-redox}，蓝光消失，说明体系中的囊泡可能已经瓦解。
     采用动态光散射测试氧化后的复配体系，测试结果见图\ref{fig:SBSeUS-redox-radius}，从中可以看出
     氧化后体系中主要有两个范围内有聚集体存在，其中3 nm左右的应为胶束相，另外在200 nm以上
     也检测出聚集体存在，这一现象与SDSePS/DTAB复配体系氧化后类似，但200 nm以上区域存在的
@@ -845,12 +884,14 @@
     
     将上述氧化后的体系采用2.0倍\ce{Na2SO3}进行还原，氧化还原过程中的外观变化及体系内聚集体
     分布变化见图\ref{fig:SBSeUS/DTAB氧化还原刺激响应性}，对还原后的复配体系中的聚集体连续使用
-    动态光散射监测10天，结果见图\ref{fig:vesicle-Re-stability}。
+    动态光散射监测10天，结果见图\ref{fig:vesicle-Re-stability}。还原后的体系10 min后即仅监测到20 nm左右范围存在较窄的
+    粒径分布，还原后的体系需3天后方能进入较稳定的状态，稳定后的SBSeUS/DTAB体系中的囊泡粒径
+    与还原后的SDSePS/DTAB中囊泡粒径较为接近，均在47 nm左右。
     \begin{figure}[htbp]
         \begin{subfigure}[]{.5\textwidth}
             \centering
             \includegraphics[width=.98\textwidth]{figure/SBSeUS-redox-radius.pdf}
-            \caption{氧化还原过程中SBSeUS/DTAB复配体系囊泡的粒径变化}\label{fig:SBSeUS-redox-radius}
+            \caption{氧化还原过程中SBSeUS/DTAB复配体系\\囊泡的粒径变化}\label{fig:SBSeUS-redox-radius}
         \end{subfigure}%
         \begin{subfigure}[]{.5\textwidth}
             \centering
@@ -861,31 +902,43 @@
         \label{fig:SBSeUS/DTAB氧化还原刺激响应性}
     \end{figure}
     
-    对SBSeUS/DTAB进行了3次的氧化还原循环，这一体系也具有氧化还原刺激响应性。
+    对SBSeUS/DTAB进行了3次的氧化还原循环，可见这一体系也具有氧化还原刺激响应性，但从氧化过程
+    看，其氧化还原刺激响应性能次于SDSePS/DTAB复配体系。
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=.6\textwidth]{figure/SBSeUS-redox-circle}\\
         \caption{4+11氧化还原循环粒径}\label{fig:SBSeUS-redox-circle}
     \end{figure}
     
-    
-    
-    \section{本章小结}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % 学位论文的正文应以《结论》作为最后一章
     \chapter{结论与展望}\label{chapter:concludes}
     \section{结论}
-    本文在第\ref{chapter:experiment}章中，通过考虑数据中心网络布局构建中的最大度限制
-    问题，提出了符合数据中心网络基本要求的DS小世界模型，并分析了它的性质。随后提出
-    SIDN，将DS模型映射到具体的网络结构中，并分析了所构成网络的平均直径、网络总带宽、
-    对故障的容错能力等各项网络性能。
-    
-    \section{不足之处及未来展望}
-    在的形式，实现了基于少量物理节点，对
-    大规模节点的模拟。其模拟运行的过程与真实运行在实现层面完全一致，运行的结果与真实
-    环境线性相关。除为本文所涉若干网络模型提供验证外，可进一步推广到更为广泛的领域，
-    为各种网络模型及路由算法的研究工作，提供分析、指导与验证。
+    本论文制备了两种含硒阴离子表面活性剂3-十二烷基硒-1-丙基硫酸钠 (SDSePS) 和11-丁基
+    硒-1-十一烷基硫酸钠 (SBSeUS)，利用含硒阴离子表面活性剂与阳离子表面活性剂 (DTAB)
+    进行复配得到两种自发形成的囊泡体系，考察了自发囊泡形成的复配摩尔比及浓度，研究了复配体系
+    的耐盐性与稳定性，着重考察了自发形成囊泡的氧化还原刺激响应性能，所得结论如下：
+    \begin{enumerate}
+        \item 在摩尔比1:9至9:1的范围内，SDSePS、SBSeUS均能与DTAB自发形成囊泡，但是
+        在接近摩尔比为1时，形成的复配体系不稳定，放置数日即产生沉淀；
+        \item 复配体系SDSePS/DTAB和SBSeUS/DTAB均当浓度大于等于2.5 mmol/L时可形成囊泡，
+        并且在2.5-10 mmol/L的范围内，所形成的囊泡粒径缓慢降低；
+        \item 复配体系SDSePS/DTAB和SBSeUS/DTAB耐盐性最好的阴阳离子表面活性剂复配摩尔比
+        均为4:6，复配形成的囊泡具有相当的稳定性；
+        \item 复配体系SDSePS/DTAB较SBSeUS/DTAB易于氧化，在氧化剂和还原剂的调控下可实现
+        体系内囊泡相和胶束相的可逆转变。
+    \end{enumerate}
+        
+    \section{展望}
+    本论文利用含硒阴离子表面活性剂与阳离子表面活性剂复配形成了自发囊泡，并且复配体系
+    SDSePS/DTAB具有很好的氧化还原刺激响应性，但还存在一些问题需要研究和解决：
+    \begin{enumerate}
+        \item 在较低浓度如1 mmol/L附近复配时，两种复配体系均会产生细微沉淀，而当在更低或高浓度
+        时，体系均保持澄清透明，这一点需要加以验证；
+        \item 复配体系SBSeUS/DTAB虽然其氧化过程难于SDSePS/DTAB，但适当条件下其仍可以实现
+        较好的氧化，对于其氧化条件和囊泡瓦解的机制也值得探索；
+        \item 实验中一些现象的重现性不好，，，
+    \end{enumerate}
     
     \begin{backmatter}
     \fancyhead[C]{\songti\zihao{-5}参考文献}
@@ -905,14 +958,150 @@
         你们在生活上对我无微不至的关怀和照顾。我爱你们！
     \end{acknowledgement}
     
-%    \begin{backmatter}
-%    \fancyhead[C]{\songti\zihao{-5}附录}
-%    \chapter{附录 A：彩色插图}
-%    \begin{figure}[htbp]
+%\begin{backmatter}
+%\fancyhead[C]{\songti\zihao{-5}附录}
+%\chapter{附录 A：彩色插图}
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[scale=1]{figure/scheme-synthesis.pdf}\\
+%    \caption{含硒表面活性剂的合成路线}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{subfigure}[]{\textwidth}
 %        \centering
-%        \includegraphics[width= 0.55\textwidth]{Figure/Ch1-SC4A}\\
-%        \caption{肉豆蔻酰胆碱在SC4A空白及存在下的两亲自组装示意图}
-%    \end{figure}
-%    \end{backmatter}
+%        \includegraphics[height=5cm]{figure/SDSePS-DTAB-ratio.png}
+%        \caption{SDSePS/DTAB不同浓度复配囊泡外观}
+%    \end{subfigure}%
+%    
+%    \begin{subfigure}[]{\textwidth}
+%        \centering
+%        \includegraphics[width=.6\textwidth]{figure/SDSePS-DTAB-ratio-fig.pdf}
+%        \caption{SDSePS/DTAB不同浓度复配囊泡粒径}
+%    \end{subfigure}%
+%    \caption{不同摩尔比SDSePS/DTAB复配体系外观和动态光散射测试结果}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{subfigure}[]{\textwidth}
+%        \centering
+%        \includegraphics[height=5cm]{figure/SBSeUS-DTAB-ratio.png}\\
+%        \caption{SBSeUS/DTAB不同浓度复配囊泡外观}
+%    \end{subfigure}%
+%    
+%    \begin{subfigure}[]{\textwidth}
+%        \centering
+%        \includegraphics[width=.6\textwidth]{figure/SBSeUS-DTAB-ratio-fig.pdf}\\
+%        \caption{SBSeUS/DTAB不同浓度复配囊泡粒径}
+%    \end{subfigure}%
+%    \caption{不同摩尔比SBSeUS/DTAB复配体系外观和动态光散射测试结果}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{subfigure}[]{\textwidth}
+%        \centering
+%        \includegraphics[width=0.52\linewidth]{figure/SDSePS-salt.pdf}
+%        \caption{SDSePS/DTAB复配体系耐盐相图}
+%    \end{subfigure}%
+%\end{figure}
+%\begin{figure}[htbp]
+%    \ContinuedFloat
+%    \begin{subfigure}[]{\textwidth}
+%        \centering
+%        \includegraphics[width=0.52\linewidth]{figure/SBSeUS-salt.pdf}\\
+%        \caption{SBSeUS/DTAB复配体系耐盐相图}
+%    \end{subfigure}%
+%    \caption{SDSePS/DTAB复配体系及SBSeUS/DTAB复配体系的耐盐相图}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=0.9\textwidth]{figure/vesicle-time-stability.pdf}\\
+%    \caption{复配囊泡稳定性}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=0.675\textwidth]{figure/vesicle-radius.pdf}\\
+%    \caption{SDSePS/DTAB粒径分布随时间变化}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{subfigure}[]{\textwidth}
+%        \centering
+%        \includegraphics[height=4.5cm]{figure/SDSePS-concentration.png}\\
+%        \caption{12+3不同浓度复配囊泡}
+%    \end{subfigure}%
+%    
+%    \begin{subfigure}[]{\textwidth}
+%        \centering
+%        \includegraphics[height=4.5cm]{figure/SBSeUS-concentration.png}\\
+%        \caption{4+11不同浓度复配囊泡}
+%    \end{subfigure}%
+%    \caption{不同浓度的复配体系}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=.825\textwidth]{Figure/vesicle-concentration-line.pdf}\\
+%    \caption{不同浓度复配囊泡粒径变化}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[height=4.5cm]{figure/SDSePS-Ox-tlc.jpg}\\
+%    \caption{12+3点板氧化确认}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \begin{subfigure}[]{.5\textwidth}
+%        \centering
+%        \includegraphics[width=.98\textwidth]{figure/SDSePS-redox-radius.pdf}
+%        \caption{氧化还原过程中SDSePS/DTAB复配体系囊泡的粒径变化}
+%    \end{subfigure}%
+%    \begin{subfigure}[]{.5\textwidth}
+%        \centering
+%        \includegraphics[width=.8\textwidth]{figure/scheme-SDSePS-redox.pdf}
+%        \caption{SDSePS/DTAB复配体系在氧化还原后的外观现象}
+%    \end{subfigure}%
+%    \caption{氧化还原刺激响应性}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=.76\textwidth]{figure/vesicle-Re-stability.pdf}\\
+%    \caption{一次还原稳定性}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=0.46\linewidth]{figure/vesicle-scheme.pdf}\\
+%    \caption{SBSeUS/DTAB囊泡示意图}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[height=5.5cm]{figure/SBSeUS-Ox-tlc}\\
+%    \caption{SBSeUS点板氧化确认}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%    \begin{subfigure}[]{.5\textwidth}
+%        \centering
+%        \includegraphics[width=.98\textwidth]{figure/SBSeUS-redox-radius.pdf}
+%        \caption{氧化还原过程中SBSeUS/DTAB复配体系囊泡的粒径变化}
+%    \end{subfigure}%
+%    \begin{subfigure}[]{.5\textwidth}
+%        \centering
+%        \includegraphics[width=.8\textwidth]{figure/scheme-SBSeUS-redox.pdf}
+%        \caption{SBSeUS/DTAB复配体系在氧化还原后的外观现象}
+%    \end{subfigure}%
+%    \caption{氧化还原刺激响应性}
+%\end{figure}
+%\end{backmatter}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
