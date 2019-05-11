@@ -100,7 +100,8 @@ pause
 goto main
 
 :main7
-gswin64c -q -o - -sDEVICE=inkcov bachelor.pdf > colorpages.txt
+gswin64c -q -o - -sDEVICE=inkcov bachelor.pdf > ColorPages.txt
 python ColorPages.py
+DEL ColorPages.txt
 pause
 goto main

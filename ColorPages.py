@@ -1,4 +1,4 @@
-with open('colorpages.txt') as f:
+with open('ColorPages.txt') as f:
     log=f.read().splitlines()
 
 j=0
