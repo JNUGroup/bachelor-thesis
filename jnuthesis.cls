@@ -647,7 +647,7 @@
 \convertergy@oldtabular}%
 {\convertergy@endoldtabular\egroup}
 \geometry{headheight=1cm,headsep=3mm,footskip=12mm}
-\geometry{top=2cm,bottom=2cm,left=2.5cm,right=2.5cm}
+\geometry{top=2cm,bottom=2cm,left=2.5cm,right=2cm}
 \def\jnut@CJK@charwidth{\hskip \f@size \p@}
 \newdimen\jnut@CJK@chardimen
 \settowidth\jnut@CJK@chardimen{\jnut@CJK@charwidth\CJKglue}
