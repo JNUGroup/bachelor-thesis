@@ -169,7 +169,7 @@
     bookmarksopen=true,
     bookmarksopenlevel=0,
     breaklinks=true,
-    colorlinks=true,
+    colorlinks=false,
     plainpages=false,
     pdfpagelabels,
     pdfborder=0 0 0%
