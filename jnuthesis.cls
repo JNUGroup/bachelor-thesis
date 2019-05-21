@@ -132,6 +132,7 @@
 \RequirePackage{longtable}
 \RequirePackage{booktabs}
 \RequirePackage{multirow}
+\RequirePackage[version=4]{mhchem}
 \RequirePackage{enumitem}
 \RequirePackage{xcolor}
 \RequirePackage{amsmath}
