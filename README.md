@@ -4,11 +4,6 @@
 >
 > 此仓库毕业后转为私有仓库
 
-**PDF 下载：**
-
-1. [毕业论文.pdf](https://raw.githubusercontent.com/mchen19/bachelor-thesis/master/bachelor.pdf)
-2. [答辩用演示文稿.pdf](https://raw.githubusercontent.com/mchen19/bachelor-thesis/master/beamer.pdf)
-
 ## 关于 LaTeX 模板
 
 * 支持自动替换所有中文句号为英文句点，方便理工科论文排版：`replaceperiod` 选项;
