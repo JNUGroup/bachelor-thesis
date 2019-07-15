@@ -2,7 +2,6 @@
 
 > 感谢 [Wang Xuerui](https://github.com/xen0n) 提供的 JNU-Thesis 模板，项目地址：https://github.com/xen0n/JNUthesis
 >
-> 此仓库毕业后转为私有仓库
 
 ## 关于 LaTeX 模板
 
